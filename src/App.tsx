@@ -66,7 +66,7 @@ function App() {
             </nav>
             <div className="flex items-center space-x-4">
               <ThemeToggle />
-              <button className="bg-trae-neutral-button-bg text-trae-neutral-button-text px-16 py-2 rounded text-small font-semibold hover:bg-gray-100 transition-colors font-manrope">
+              <button className="bg-trae-neutral-button-bg text-trae-neutral-button-text px-16 py-2 rounded text-small font-semibold hover:bg-gray-100 transition-colors font-manrope border border-theme-primary">
                 Claim Your Store
               </button>
             </div>
@@ -152,7 +152,7 @@ function App() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-16 justify-center">
-            <button className="bg-gradient-to-r from-trae-cta-gradient-start to-trae-cta-gradient-end text-white px-32 py-3 rounded font-semibold hover:opacity-90 transition-opacity font-manrope text-body">
+            <button className="bg-gradient-to-r from-trae-cta-gradient-start via-trae-cta-gradient-mid to-trae-cta-gradient-end text-white px-32 py-3 rounded font-semibold hover:opacity-90 transition-opacity font-manrope text-body">
               Publish to My Shopify
             </button>
             <button className="border-2 border-theme-secondary text-theme-secondary px-32 py-3 rounded font-semibold hover:bg-theme-secondary hover:text-white transition-colors font-manrope text-body">
@@ -324,7 +324,7 @@ function App() {
             </div>
             
             <div className="text-center mt-32">
-              <button className="bg-trae-neutral-button-bg text-trae-neutral-button-text px-32 py-3 rounded font-semibold hover:bg-gray-100 transition-colors font-manrope text-body">
+              <button className="bg-trae-neutral-button-bg text-theme-primary px-32 py-3 rounded font-semibold hover:bg-gray-100 transition-colors font-manrope text-body border border-theme-primary">
                 Yes, I'm In
               </button>
             </div>
