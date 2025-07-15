@@ -249,7 +249,7 @@ function App() {
             </div>
             
             {/* Second Row */}
-            <div className="flex justify-center space-x-16">
+            <div className="flex justify-start space-x-16">
               <a 
                 href="#" 
                 className="text-theme-text-secondary hover:text-theme-primary transition-colors font-manrope text-body focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-bg rounded"
