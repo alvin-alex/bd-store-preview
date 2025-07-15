@@ -144,12 +144,54 @@
 }
 
 /* Base Styles */
+:root {
+  /* Light theme variables */
+  --color-bg: #FFFAFA;
+  --color-surface: #F5F5F5;
+  --color-text: #333333;
+  --color-text-secondary: #7A7A7A;
+  --color-primary: #2C4C9C;
+  --color-primary-hover: #1F356B;
+  --color-secondary: #EE6C4D;
+  --color-secondary-hover: #C75A3F;
+  --color-accent: #F1C40F;
+  --color-border: #D1D1D1;
+  --shadow-subtle: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-card: 0 4px 6px rgba(0, 0, 0, 0.07);
+}
+
+.dark {
+  /* Dark theme variables */
+  --color-bg: #1A1A1A;
+  --color-surface: #2D2D2D;
+  --color-text: #F5F5F5;
+  --color-text-secondary: #D1D1D1;
+  --color-primary: #5F82C2;
+  --color-primary-hover: #7A96D1;
+  --color-secondary: #F4917A;
+  --color-secondary-hover: #F7A891;
+  --color-accent: #F1C40F;
+  --color-border: #404040;
+  --shadow-subtle: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-card: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Smooth transitions for theme changes */
+*,
+*::before,
+*::after {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
 body {
   font-family: 'Manrope', sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Cabinet Grotesk', sans-serif;
+  color: var(--color-text);
 }

@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -29,6 +30,18 @@ export default {
         'warning-yellow': '#F1C40F',
         'error-red': '#E63946',
         'info-blue': '#5F82C2',
+        
+        // Theme-aware colors using CSS variables
+        'theme-bg': 'var(--color-bg)',
+        'theme-surface': 'var(--color-surface)',
+        'theme-text': 'var(--color-text)',
+        'theme-text-secondary': 'var(--color-text-secondary)',
+        'theme-primary': 'var(--color-primary)',
+        'theme-primary-hover': 'var(--color-primary-hover)',
+        'theme-secondary': 'var(--color-secondary)',
+        'theme-secondary-hover': 'var(--color-secondary-hover)',
+        'theme-accent': 'var(--color-accent)',
+        'theme-border': 'var(--color-border)',
       },
       fontFamily: {
         'cabinet': ['Cabinet Grotesk', 'sans-serif'],
@@ -55,6 +68,8 @@ export default {
       boxShadow: {
         'subtle': '0 2px 4px rgba(0, 0, 0, 0.05)',
         'card': '0 4px 6px rgba(0, 0, 0, 0.07)',
+        'subtle-dark': '0 2px 4px rgba(0, 0, 0, 0.3)',
+        'card-dark': '0 4px 6px rgba(0, 0, 0, 0.4)',
       },
     },
   },
