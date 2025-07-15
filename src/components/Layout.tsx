@@ -86,7 +86,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div className="flex items-center">
               <Link 
                 to="/"
-                className="focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-bg rounded"
+                className="focus:outline-none"
               >
                 <img src="/src/logo/10.svg" alt="BeautifullyDone Logo" className="h-12 w-12" />
               </Link>
@@ -124,7 +124,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
                   href="https://beautifullydone.store" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-bg rounded"
+                  className="flex items-center focus:outline-none"
                 >
                   <img src="/src/logo/10.svg" alt="BeautifullyDone Logo" className="h-24 w-24" />
                   <span className="ml-2 text-h1 font-bold font-cabinet text-white">BeautifullyDone</span>
