@@ -134,7 +134,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
               <ThemeToggle />
               {isHomePage && (
                 <button 
-                  className="bg-gradient-to-r from-theme-primary via-trae-cta-gradient-mid to-trae-cta-gradient-end text-white px-6 py-2.5 rounded text-sm font-semibold hover:opacity-90 transition-opacity font-manrope focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-theme-bg"
+                  className="cta-gradient text-white px-6 py-2.5 rounded text-sm font-semibold hover:opacity-90 transition-opacity font-manrope focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-theme-bg"
                   onClick={handlePublishClick}
                 >
                   Claim Your Store

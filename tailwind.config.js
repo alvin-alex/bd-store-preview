@@ -18,10 +18,6 @@ export default {
         'accent-teal': '#00BFA5',
         'accent-red': '#E63946',
         
-        // Trae-inspired Colors
-        'trae-cta-gradient-start': '#FF4E4E',
-        'trae-cta-gradient-mid': '#FF7A7A',
-        'trae-cta-gradient-end': '#C259FF',
         'trae-neutral-button-bg': '#FFFFFF',
         'trae-neutral-button-text': '#333333',
         
