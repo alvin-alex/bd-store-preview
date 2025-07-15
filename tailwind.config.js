@@ -31,7 +31,7 @@ export default {
         'info-blue': '#4392D1',
       },
       fontFamily: {
-        'satoshi': ['Satoshi', 'sans-serif'],
+        'cabinet': ['Cabinet Grotesk', 'sans-serif'],
         'manrope': ['Manrope', 'sans-serif'],
         'space-grotesk': ['Space Grotesk', 'sans-serif'],
         'epilogue': ['Epilogue', 'sans-serif'],

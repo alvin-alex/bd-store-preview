@@ -10,7 +10,7 @@ function App() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <Monitor className="h-8 w-8 text-primary-blue" />
-              <span className="ml-2 text-xl font-bold text-neutral-black font-satoshi">StorePreview</span>
+              <span className="ml-2 text-xl font-bold text-neutral-black font-cabinet">StorePreview</span>
             </div>
             <nav className="hidden md:flex space-x-32">
               <a href="#preview" className="text-neutral-black hover:text-primary-blue transition-colors font-manrope text-body">Preview</a>
@@ -28,7 +28,7 @@ function App() {
       <section id="preview" className="py-16 lg:py-32">
         <div className="max-w-7xl mx-auto px-16">
           <div className="text-center mb-32">
-            <h1 className="text-h1 font-bold text-neutral-black mb-16 font-satoshi">
+            <h1 className="text-h1 font-bold text-neutral-black mb-16 font-cabinet">
               You're store, BeautifullyDone.
             </h1>
             <p className="text-body text-neutral-dark max-w-2xl mx-auto font-manrope">
@@ -58,7 +58,7 @@ function App() {
                 <div className="space-y-32">
                   {/* Store Header */}
                   <div className="flex justify-between items-center pb-16 border-b border-neutral-light">
-                    <div className="text-h3 font-bold text-neutral-black font-satoshi">Your Store</div>
+                    <div className="text-h3 font-bold text-neutral-black font-cabinet">Your Store</div>
                     <div className="flex space-x-16">
                       <span className="text-small text-neutral-dark font-manrope">Cart (0)</span>
                       <span className="text-small text-neutral-dark font-manrope">Account</span>
@@ -74,9 +74,9 @@ function App() {
                       </div>
                     </div>
                     <div className="space-y-16">
-                      <h2 className="text-h3 font-bold text-neutral-black font-satoshi">Featured Product</h2>
+                      <h2 className="text-h3 font-bold text-neutral-black font-cabinet">Featured Product</h2>
                       <p className="text-neutral-dark font-manrope text-body">Beautiful product description that converts visitors into customers.</p>
-                      <div className="text-h2 font-bold text-primary-blue font-satoshi">$99.99</div>
+                      <div className="text-h2 font-bold text-primary-blue font-cabinet">$99.99</div>
                       <button className="bg-primary-blue text-white px-32 py-3 rounded font-semibold hover:bg-primary-blue-dark transition-colors font-manrope text-body">
                         Add to Cart
                       </button>
@@ -145,7 +145,7 @@ function App() {
       <section className="py-32 bg-neutral-light">
         <div className="max-w-7xl mx-auto px-16">
           <div className="text-center mb-32">
-            <h2 className="text-h2 font-bold text-neutral-black mb-16 font-satoshi">
+            <h2 className="text-h2 font-bold text-neutral-black mb-16 font-cabinet">
               How It Works
             </h2>
           </div>
@@ -153,9 +153,9 @@ function App() {
           <div className="grid md:grid-cols-3 gap-32">
             <div className="text-center">
               <div className="inline-flex items-center justify-center w-12 h-12 bg-primary-blue rounded-full mb-16">
-                <span className="text-white font-bold text-body font-satoshi">1</span>
+                <span className="text-white font-bold text-body font-cabinet">1</span>
               </div>
-              <h3 className="text-h4 font-bold text-neutral-black mb-16 font-satoshi">
+              <h3 className="text-h4 font-bold text-neutral-black mb-16 font-cabinet">
                 We scrape your existing site
               </h3>
               <p className="text-small text-neutral-dark font-manrope">
@@ -165,9 +165,9 @@ function App() {
             
             <div className="text-center">
               <div className="inline-flex items-center justify-center w-12 h-12 bg-primary-blue rounded-full mb-16">
-                <span className="text-white font-bold text-body font-satoshi">2</span>
+                <span className="text-white font-bold text-body font-cabinet">2</span>
               </div>
-              <h3 className="text-h4 font-bold text-neutral-black mb-16 font-satoshi">
+              <h3 className="text-h4 font-bold text-neutral-black mb-16 font-cabinet">
                 We rebuild and optimize on Shopify
               </h3>
               <p className="text-small text-neutral-dark font-manrope">
@@ -177,9 +177,9 @@ function App() {
             
             <div className="text-center">
               <div className="inline-flex items-center justify-center w-12 h-12 bg-primary-blue rounded-full mb-16">
-                <span className="text-white font-bold text-body font-satoshi">3</span>
+                <span className="text-white font-bold text-body font-cabinet">3</span>
               </div>
-              <h3 className="text-h4 font-bold text-neutral-black mb-16 font-satoshi">
+              <h3 className="text-h4 font-bold text-neutral-black mb-16 font-cabinet">
                 You preview → click publish → you're live
               </h3>
               <p className="text-small text-neutral-dark font-manrope">
@@ -194,7 +194,7 @@ function App() {
       <section className="py-32 bg-neutral-white">
         <div className="max-w-7xl mx-auto px-16">
           <div className="text-center mb-32">
-            <h2 className="text-h2 font-bold text-neutral-black mb-16 font-satoshi">See More Pages</h2>
+            <h2 className="text-h2 font-bold text-neutral-black mb-16 font-cabinet">See More Pages</h2>
             <p className="text-body text-neutral-dark font-manrope">Your complete store includes all essential pages</p>
           </div>
           
@@ -223,13 +223,13 @@ function App() {
       <section className="py-32 bg-neutral-light">
         <div className="max-w-4xl mx-auto px-16">
           <div className="text-center mb-32">
-            <h2 className="text-h2 font-bold text-neutral-black mb-16 font-satoshi">What's Included</h2>
+            <h2 className="text-h2 font-bold text-neutral-black mb-16 font-cabinet">What's Included</h2>
           </div>
           
           <div className="bg-neutral-white rounded shadow-card p-32">
             <div className="grid md:grid-cols-2 gap-32">
               <div>
-                <h3 className="text-h4 font-bold text-neutral-black mb-16 font-satoshi">Your Complete Store</h3>
+                <h3 className="text-h4 font-bold text-neutral-black mb-16 font-cabinet">Your Complete Store</h3>
                 <ul className="space-y-16">
                   <li className="flex items-start">
                     <div className="w-2 h-2 bg-primary-blue rounded-full mt-2 mr-3"></div>
@@ -251,7 +251,7 @@ function App() {
               </div>
               
               <div>
-                <h3 className="text-h4 font-bold text-neutral-black mb-16 font-satoshi">Support & Service</h3>
+                <h3 className="text-h4 font-bold text-neutral-black mb-16 font-cabinet">Support & Service</h3>
                 <ul className="space-y-16">
                   <li className="flex items-start">
                     <div className="w-2 h-2 bg-primary-blue rounded-full mt-2 mr-3"></div>
@@ -288,7 +288,7 @@ function App() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-16 md:mb-0">
               <Monitor className="h-6 w-6 text-primary-blue" />
-              <span className="ml-2 text-body font-bold font-satoshi">StorePreview</span>
+              <span className="ml-2 text-body font-bold font-cabinet">StorePreview</span>
             </div>
             
             <div className="flex space-x-16 mb-16 md:mb-0">
