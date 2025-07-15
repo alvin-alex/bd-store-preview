@@ -66,7 +66,7 @@ function App() {
             </nav>
             <div className="flex items-center space-x-4">
               <ThemeToggle />
-              <button className="bg-theme-primary text-white px-16 py-2 rounded text-small font-semibold hover:bg-theme-primary-hover transition-colors font-manrope">
+              <button className="bg-trae-neutral-button-bg text-trae-neutral-button-text px-16 py-2 rounded text-small font-semibold hover:bg-gray-100 transition-colors font-manrope">
                 Claim Your Store
               </button>
             </div>
@@ -78,7 +78,7 @@ function App() {
       <section id="preview" className="py-16 lg:py-32">
         <div className="max-w-7xl mx-auto px-16">
           <div className="text-center mb-32">
-            <h1 className="text-h1 font-bold text-theme-text mb-16 font-cabinet">
+            <h1 className="text-h1 font-bold text-theme-primary mb-16 font-cabinet">
               You're store, BeautifullyDone.
             </h1>
             <p className="text-body text-theme-text-secondary max-w-2xl mx-auto font-manrope">
@@ -126,7 +126,7 @@ function App() {
                     <div className="space-y-16">
                       <h2 className="text-h3 font-bold text-theme-text font-cabinet">Featured Product</h2>
                       <p className="text-theme-text-secondary font-manrope text-body">Beautiful product description that converts visitors into customers.</p>
-                      <div className="text-h2 font-bold text-theme-primary font-cabinet">$99.99</div>
+                      <div className="text-h2 font-bold text-theme-text font-cabinet">$99.99</div>
                       <button className="bg-theme-primary text-white px-32 py-3 rounded font-semibold hover:bg-theme-primary-hover transition-colors font-manrope text-body">
                         Add to Cart
                       </button>
@@ -152,7 +152,7 @@ function App() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-16 justify-center">
-            <button className="bg-theme-primary text-white px-32 py-3 rounded font-semibold hover:bg-theme-primary-hover transition-colors font-manrope text-body">
+            <button className="bg-gradient-to-r from-trae-cta-gradient-start to-trae-cta-gradient-end text-white px-32 py-3 rounded font-semibold hover:opacity-90 transition-opacity font-manrope text-body">
               Publish to My Shopify
             </button>
             <button className="border-2 border-theme-secondary text-theme-secondary px-32 py-3 rounded font-semibold hover:bg-theme-secondary hover:text-white transition-colors font-manrope text-body">
@@ -195,7 +195,7 @@ function App() {
       <section className="py-32 bg-theme-surface">
         <div className="max-w-7xl mx-auto px-16">
           <div className="text-center mb-32">
-            <h2 className="text-h2 font-bold text-theme-text mb-16 font-cabinet">
+            <h2 className="text-h2 font-bold text-theme-primary mb-16 font-cabinet">
               How It Works
             </h2>
           </div>
@@ -244,7 +244,7 @@ function App() {
       <section className="py-32 bg-theme-bg">
         <div className="max-w-7xl mx-auto px-16">
           <div className="text-center mb-32">
-            <h2 className="text-h2 font-bold text-theme-text mb-16 font-cabinet">See More Pages</h2>
+            <h2 className="text-h2 font-bold text-theme-primary mb-16 font-cabinet">See More Pages</h2>
             <p className="text-body text-theme-text-secondary font-manrope">Your complete store includes all essential pages</p>
           </div>
           
@@ -273,13 +273,13 @@ function App() {
       <section className="py-32 bg-theme-surface">
         <div className="max-w-4xl mx-auto px-16">
           <div className="text-center mb-32">
-            <h2 className="text-h2 font-bold text-theme-text mb-16 font-cabinet">What's Included</h2>
+            <h2 className="text-h2 font-bold text-theme-primary mb-16 font-cabinet">What's Included</h2>
           </div>
           
           <div className="bg-theme-bg rounded shadow-card dark:shadow-card-dark p-32 border border-theme-border">
             <div className="grid md:grid-cols-2 gap-32">
               <div>
-                <h3 className="text-h4 font-bold text-theme-text mb-16 font-cabinet">Your Complete Store</h3>
+                <h3 className="text-h4 font-bold text-theme-primary mb-16 font-cabinet">Your Complete Store</h3>
                 <ul className="space-y-16">
                   <li className="flex items-start">
                     <div className="w-2 h-2 bg-theme-primary rounded-full mt-2 mr-3"></div>
@@ -301,7 +301,7 @@ function App() {
               </div>
               
               <div>
-                <h3 className="text-h4 font-bold text-theme-text mb-16 font-cabinet">Support & Service</h3>
+                <h3 className="text-h4 font-bold text-theme-primary mb-16 font-cabinet">Support & Service</h3>
                 <ul className="space-y-16">
                   <li className="flex items-start">
                     <div className="w-2 h-2 bg-theme-primary rounded-full mt-2 mr-3"></div>
@@ -324,7 +324,7 @@ function App() {
             </div>
             
             <div className="text-center mt-32">
-              <button className="bg-theme-primary text-white px-32 py-3 rounded font-semibold hover:bg-theme-primary-hover transition-colors font-manrope text-body">
+              <button className="bg-trae-neutral-button-bg text-trae-neutral-button-text px-32 py-3 rounded font-semibold hover:bg-gray-100 transition-colors font-manrope text-body">
                 Yes, I'm In
               </button>
             </div>
@@ -338,7 +338,7 @@ function App() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-16 md:mb-0">
               <Monitor className="h-6 w-6 text-theme-primary" />
-              <span className="ml-2 text-body font-bold font-cabinet">StorePreview</span>
+              <span className="ml-2 text-body font-bold font-cabinet text-theme-primary">StorePreview</span>
             </div>
             
             <div className="flex space-x-16 mb-16 md:mb-0">

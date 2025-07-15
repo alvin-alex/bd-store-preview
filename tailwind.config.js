@@ -6,9 +6,9 @@ export default {
     extend: {
       colors: {
         // Core Palette
-        'primary-blue': '#2C4C9C',
-        'primary-blue-light': '#5F82C2',
-        'primary-blue-dark': '#1F356B',
+        'primary-blue': '#E0C0C0',
+        'primary-blue-light': '#F0E0E0',
+        'primary-blue-dark': '#C0A0A0',
         'secondary-orange': '#EE6C4D',
         'secondary-orange-light': '#F4917A',
         'secondary-orange-dark': '#C75A3F',
@@ -17,6 +17,12 @@ export default {
         'accent-yellow': '#F1C40F',
         'accent-teal': '#00BFA5',
         'accent-red': '#E63946',
+        
+        // Trae-inspired Colors
+        'trae-cta-gradient-start': '#FF6B6B',
+        'trae-cta-gradient-end': '#8E44AD',
+        'trae-neutral-button-bg': '#FFFFFF',
+        'trae-neutral-button-text': '#333333',
         
         // Neutral Palette
         'neutral-white': '#FFFAFA',
@@ -29,7 +35,7 @@ export default {
         'success-teal': '#00BFA5',
         'warning-yellow': '#F1C40F',
         'error-red': '#E63946',
-        'info-blue': '#5F82C2',
+        'info-blue': '#F0E0E0',
         
         // Theme-aware colors using CSS variables
         'theme-bg': 'var(--color-bg)',
