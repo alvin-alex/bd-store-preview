@@ -6,9 +6,9 @@ export default {
     extend: {
       colors: {
         // Core Palette
-        'primary-blue': '#E0C0C0',
-        'primary-blue-light': '#F0E0E0',
-        'primary-blue-dark': '#C0A0A0',
+        'primary-blue': '#FF8C42',
+        'primary-blue-light': '#FFB380',
+        'primary-blue-dark': '#E6722A',
         'secondary-orange': '#EE6C4D',
         'secondary-orange-light': '#F4917A',
         'secondary-orange-dark': '#C75A3F',
@@ -19,8 +19,8 @@ export default {
         'accent-red': '#E63946',
         
         // Trae-inspired Colors
-        'trae-cta-gradient-start': '#FF6B6B',
-        'trae-cta-gradient-end': '#8E44AD',
+        'trae-cta-gradient-start': '#FF6B35',
+        'trae-cta-gradient-end': '#FF8C42',
         'trae-neutral-button-bg': '#FFFFFF',
         'trae-neutral-button-text': '#333333',
         
