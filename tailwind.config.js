@@ -72,6 +72,11 @@ export default {
         '16': '16px',
         '32': '32px',
       },
+      maxWidth: {
+        'prose': '65ch',
+        'prose-narrow': '45ch',
+        'prose-wide': '75ch',
+      },
       boxShadow: {
         'subtle': '0 2px 4px rgba(0, 0, 0, 0.05)',
         'card': '0 4px 6px rgba(0, 0, 0, 0.07)',

@@ -85,7 +85,7 @@ function App() {
             <div className="flex items-center space-x-4">
               <ThemeToggle />
               <button 
-                className="bg-gradient-to-r from-theme-primary via-trae-cta-gradient-mid to-trae-cta-gradient-end text-white px-16 py-2 rounded text-small font-semibold hover:opacity-90 transition-opacity font-manrope focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-theme-bg"
+                className="bg-gradient-to-r from-theme-primary via-trae-cta-gradient-mid to-trae-cta-gradient-end text-neutral-black px-16 py-2 rounded text-small font-semibold hover:opacity-90 transition-opacity font-manrope focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-theme-bg"
                 onClick={handlePublishClick}
               >
                 Claim Your Store
@@ -147,7 +147,7 @@ function App() {
                     </div>
                     <div className="space-y-16">
                       <h2 className="text-h3 font-bold text-theme-text font-cabinet">Featured Product</h2>
-                      <p className="text-theme-text-secondary font-manrope text-body">Beautiful product description that converts visitors into customers.</p>
+                      <p className="text-theme-text-secondary font-manrope text-body max-w-prose">Beautiful product description that converts visitors into customers.</p>
                       <div className="text-h2 font-bold text-theme-text font-cabinet">$99.99</div>
                       <button className="bg-theme-primary text-white px-32 py-3 rounded font-semibold hover:bg-theme-primary-hover transition-colors font-manrope text-body">
                         Add to Cart
@@ -175,13 +175,13 @@ function App() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-16 justify-center">
             <button 
-              className="bg-gradient-to-r from-theme-primary via-trae-cta-gradient-mid to-trae-cta-gradient-end text-white px-32 py-3 rounded font-semibold hover:opacity-90 transition-opacity font-manrope text-body focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-theme-bg"
+              className="bg-gradient-to-r from-theme-primary via-trae-cta-gradient-mid to-trae-cta-gradient-end text-neutral-black px-32 py-3 rounded font-semibold hover:opacity-90 transition-opacity font-manrope text-body focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-theme-bg"
               onClick={handlePublishClick}
             >
               Publish to My Shopify
             </button>
             <button 
-              className="border-2 border-theme-primary text-theme-primary px-32 py-3 rounded font-semibold hover:bg-theme-primary hover:text-white transition-colors font-manrope text-body focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-bg"
+              className="border-2 border-theme-primary text-neutral-black px-32 py-3 rounded font-semibold hover:bg-theme-primary hover:text-neutral-black transition-colors font-manrope text-body focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-bg"
               onClick={handleRequestTweaksClick}
             >
               Request Tweaks
@@ -196,7 +196,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-16">
           <div className="text-center mb-32">
             <h2 className="text-h2 font-bold text-theme-primary mb-16 font-cabinet">See More Pages</h2>
-            <p className="text-body text-theme-text-secondary font-manrope">Your complete store includes all essential pages</p>
+            <p className="text-body text-theme-text-secondary font-manrope max-w-prose mx-auto">Your complete store includes all essential pages</p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-16">
