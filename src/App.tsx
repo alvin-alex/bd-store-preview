@@ -74,18 +74,18 @@ function App() {
         className="bg-theme-bg shadow-subtle dark:shadow-subtle-dark sticky top-0 z-50"
         role="banner"
       >
-        <div className="max-w-7xl mx-auto px-16">
-          <div className="flex justify-between items-center h-16">
+        <div className="max-w-7xl mx-auto px-8">
+          <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
-              <img src="/src/logo/10.svg" alt="BeautifullyDone Logo" className="h-8 w-8" />
+              <img src="/src/logo/10.svg" alt="BeautifullyDone Logo" className="h-10 w-10" />
             </div>
-            <nav className="hidden md:flex space-x-32">
+            <nav className="hidden md:flex space-x-8">
             </nav>
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-6">
               <ThemeToggle />
               <button 
                 className="bg-gradient-to-r from-theme-primary via-trae-cta-gradient-mid to-trae-cta-gradient-end text-neutral-black px-16 py-2 rounded text-small font-semibold hover:opacity-90 transition-opacity font-manrope focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-theme-bg"
-                className="bg-gradient-to-r from-theme-primary via-trae-cta-gradient-mid to-trae-cta-gradient-end text-white px-16 py-2 rounded text-small font-semibold hover:opacity-90 transition-opacity font-manrope focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-theme-bg"
+                className="bg-gradient-to-r from-theme-primary via-trae-cta-gradient-mid to-trae-cta-gradient-end text-white px-6 py-2.5 rounded text-sm font-semibold hover:opacity-90 transition-opacity font-manrope focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-theme-bg"
                 onClick={handlePublishClick}
               >
                 Claim Your Store
