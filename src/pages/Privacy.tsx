@@ -17,12 +17,12 @@ export const Privacy: React.FC = () => {
         </div>
         
         <div className="bg-theme-surface rounded-lg shadow-card dark:shadow-card-dark p-8 border border-theme-border">
-          <h1 className="text-h1 font-bold text-theme-text mb-8 font-cabinet">Privacy Policy</h1>
+          <h1 className="text-h2 font-bold text-theme-text mb-8 font-cabinet">Privacy Policy</h1>
           
           <div className="prose max-w-none">
             <div className="space-y-8 text-theme-text">
               <section>
-                <h2 className="text-h3 font-bold text-theme-text mb-4 font-cabinet">1. Information We Collect</h2>
+                <h2 className="text-h4 font-bold text-theme-text mb-4 font-cabinet">1. Information We Collect</h2>
                 <p className="text-body text-theme-text-secondary font-manrope leading-relaxed mb-4">
                   We collect information you provide directly to us, such as when you create an account, use our services, or contact us for support. This may include:
                 </p>
@@ -36,7 +36,7 @@ export const Privacy: React.FC = () => {
               </section>
 
               <section>
-                <h2 className="text-h3 font-bold text-theme-text mb-4 font-cabinet">2. How We Use Your Information</h2>
+                <h2 className="text-h4 font-bold text-theme-text mb-4 font-cabinet">2. How We Use Your Information</h2>
                 <p className="text-body text-theme-text-secondary font-manrope leading-relaxed mb-4">
                   We use the information we collect to:
                 </p>
@@ -51,7 +51,7 @@ export const Privacy: React.FC = () => {
               </section>
 
               <section>
-                <h2 className="text-h3 font-bold text-theme-text mb-4 font-cabinet">3. Information Sharing</h2>
+                <h2 className="text-h4 font-bold text-theme-text mb-4 font-cabinet">3. Information Sharing</h2>
                 <p className="text-body text-theme-text-secondary font-manrope leading-relaxed">
                   We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following circumstances:
                 </p>
@@ -65,21 +65,21 @@ export const Privacy: React.FC = () => {
               </section>
 
               <section>
-                <h2 className="text-h3 font-bold text-theme-text mb-4 font-cabinet">4. Data Security</h2>
+                <h2 className="text-h4 font-bold text-theme-text mb-4 font-cabinet">4. Data Security</h2>
                 <p className="text-body text-theme-text-secondary font-manrope leading-relaxed">
                   We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet or electronic storage is 100% secure.
                 </p>
               </section>
 
               <section>
-                <h2 className="text-h3 font-bold text-theme-text mb-4 font-cabinet">5. Cookies and Tracking</h2>
+                <h2 className="text-h4 font-bold text-theme-text mb-4 font-cabinet">5. Cookies and Tracking</h2>
                 <p className="text-body text-theme-text-secondary font-manrope leading-relaxed">
                   We use cookies and similar tracking technologies to collect information about your browsing activities and to provide you with a better experience. You can control cookies through your browser settings, but disabling cookies may affect the functionality of our services.
                 </p>
               </section>
 
               <section>
-                <h2 className="text-h3 font-bold text-theme-text mb-4 font-cabinet">6. Your Rights</h2>
+                <h2 className="text-h4 font-bold text-theme-text mb-4 font-cabinet">6. Your Rights</h2>
                 <p className="text-body text-theme-text-secondary font-manrope leading-relaxed mb-4">
                   Depending on your location, you may have certain rights regarding your personal information, including:
                 </p>
@@ -94,28 +94,28 @@ export const Privacy: React.FC = () => {
               </section>
 
               <section>
-                <h2 className="text-h3 font-bold text-theme-text mb-4 font-cabinet">7. Data Retention</h2>
+                <h2 className="text-h4 font-bold text-theme-text mb-4 font-cabinet">7. Data Retention</h2>
                 <p className="text-body text-theme-text-secondary font-manrope leading-relaxed">
                   We retain your personal information for as long as necessary to fulfill the purposes outlined in this privacy policy, unless a longer retention period is required or permitted by law. When we no longer need your information, we will securely delete or anonymize it.
                 </p>
               </section>
 
               <section>
-                <h2 className="text-h3 font-bold text-theme-text mb-4 font-cabinet">8. International Transfers</h2>
+                <h2 className="text-h4 font-bold text-theme-text mb-4 font-cabinet">8. International Transfers</h2>
                 <p className="text-body text-theme-text-secondary font-manrope leading-relaxed">
                   Your information may be transferred to and processed in countries other than your own. We will ensure that any such transfers comply with applicable data protection laws and that your information receives adequate protection.
                 </p>
               </section>
 
               <section>
-                <h2 className="text-h3 font-bold text-theme-text mb-4 font-cabinet">9. Changes to This Policy</h2>
+                <h2 className="text-h4 font-bold text-theme-text mb-4 font-cabinet">9. Changes to This Policy</h2>
                 <p className="text-body text-theme-text-secondary font-manrope leading-relaxed">
                   We may update this privacy policy from time to time. We will notify you of any changes by posting the new privacy policy on this page and updating the "Last updated" date below.
                 </p>
               </section>
 
               <section>
-                <h2 className="text-h3 font-bold text-theme-text mb-4 font-cabinet">10. Contact Us</h2>
+                <h2 className="text-h4 font-bold text-theme-text mb-4 font-cabinet">10. Contact Us</h2>
                 <p className="text-body text-theme-text-secondary font-manrope leading-relaxed">
                   If you have any questions about this privacy policy or our privacy practices, please contact us at{' '}
                   <a 
