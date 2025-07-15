@@ -239,10 +239,10 @@ function App() {
               
               <div className="text-theme-text-secondary font-manrope text-body">
                 Need help? <a 
-                  href="mailto:support@beautifullydone.com" 
+                  href="mailto:support@beautifullydone.store" 
                   className="text-theme-primary hover:underline focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-bg rounded"
                 >
-                  support@beautifullydone.com
+                  support@beautifullydone.store
                 </a>
               </div>
             </div>
