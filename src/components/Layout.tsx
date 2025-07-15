@@ -165,6 +165,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
                 >
                   <img src={logoSrc} alt="BeautifullyDone Logo" className="h-24 w-24" />
                   <span className="ml-2 text-h1 font-bold font-cabinet text-neutral-black">BeautifullyDone</span>
+                  <span className="ml-2 text-h1 font-bold font-cabinet text-theme-text">BeautifullyDone</span>
                 </a>
               </div>
               
