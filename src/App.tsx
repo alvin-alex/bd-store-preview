@@ -3,21 +3,21 @@ import { Monitor, Zap, Palette, Settings, ChevronLeft, ChevronRight } from 'luci
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#FFFAFA]">
+    <div className="min-h-screen bg-neutral-lightest font-manrope">
       {/* Header */}
-      <header className="bg-white shadow-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <header className="bg-white shadow-subtle sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-16">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <Monitor className="h-8 w-8 text-[#0B70B8]" />
-              <span className="ml-2 text-xl font-bold text-[#333333]">StorePreview</span>
+              <Monitor className="h-8 w-8 text-primary-blue" />
+              <span className="ml-2 text-xl font-bold text-neutral-darkest font-satoshi">StorePreview</span>
             </div>
-            <nav className="hidden md:flex space-x-8">
-              <a href="#preview" className="text-[#333333] hover:text-[#0B70B8] transition-colors">Preview</a>
-              <a href="#features" className="text-[#333333] hover:text-[#0B70B8] transition-colors">Features</a>
-              <a href="#support" className="text-[#333333] hover:text-[#0B70B8] transition-colors">Support</a>
+            <nav className="hidden md:flex space-x-32">
+              <a href="#preview" className="text-neutral-darkest hover:text-primary-blue transition-colors font-manrope text-body">Preview</a>
+              <a href="#features" className="text-neutral-darkest hover:text-primary-blue transition-colors font-manrope text-body">Features</a>
+              <a href="#support" className="text-neutral-darkest hover:text-primary-blue transition-colors font-manrope text-body">Support</a>
             </nav>
-            <button className="bg-[#0B70B8] text-white px-6 py-2 rounded text-sm font-semibold hover:bg-[#095a94] transition-colors">
+            <button className="bg-primary-blue text-white px-16 py-2 rounded text-small font-semibold hover:bg-blue-700 transition-colors font-manrope">
               Claim Your Store
             </button>
           </div>
@@ -25,73 +25,73 @@ function App() {
       </header>
 
       {/* Hero Preview Section */}
-      <section id="preview" className="py-16 lg:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h1 className="text-4xl lg:text-5xl font-bold text-[#333333] mb-6" style={{ lineHeight: '1.2' }}>
+      <section id="preview" className="py-16 lg:py-32">
+        <div className="max-w-7xl mx-auto px-16">
+          <div className="text-center mb-32">
+            <h1 className="text-h1 font-bold text-neutral-darkest mb-16 font-satoshi">
               You're store, BeautifullyDone.
             </h1>
-            <p className="text-lg text-[#7A7A7A] max-w-2xl mx-auto" style={{ lineHeight: '1.5' }}>
+            <p className="text-body text-neutral-dark max-w-2xl mx-auto font-manrope">
               We've scraped, redesigned, and packaged your site into a live Shopify demo. Take a look.
             </p>
           </div>
 
           {/* Browser Mockup */}
-          <div className="max-w-5xl mx-auto mb-12">
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div className="max-w-5xl mx-auto mb-32">
+            <div className="bg-white rounded shadow-card overflow-hidden">
               {/* Browser Header */}
-              <div className="bg-[#F5F5F5] p-4 flex items-center space-x-2">
-                <div className="flex space-x-2">
-                  <div className="w-3 h-3 bg-[#E63946] rounded-full"></div>
-                  <div className="w-3 h-3 bg-[#FFD30A] rounded-full"></div>
-                  <div className="w-3 h-3 bg-[#00BFA5] rounded-full"></div>
+              <div className="bg-neutral-light p-16 flex items-center space-x-8">
+                <div className="flex space-x-8">
+                  <div className="w-3 h-3 bg-accent-red rounded-full"></div>
+                  <div className="w-3 h-3 bg-accent-yellow rounded-full"></div>
+                  <div className="w-3 h-3 bg-accent-teal rounded-full"></div>
                 </div>
-                <div className="flex-1 mx-4">
-                  <div className="bg-white rounded px-4 py-1 text-sm text-[#7A7A7A]">
+                <div className="flex-1 mx-16">
+                  <div className="bg-white rounded px-16 py-1 text-small text-neutral-dark font-manrope">
                     yourstore.myshopify.com
                   </div>
                 </div>
               </div>
               
-              {/* Store Preview */}
-              <div className="p-8 bg-white">
-                <div className="space-y-8">
+              {/* Store Preview with 32px padding */}
+              <div className="p-32 bg-white">
+                <div className="space-y-32">
                   {/* Store Header */}
-                  <div className="flex justify-between items-center pb-4 border-b border-[#F5F5F5]">
-                    <div className="text-2xl font-bold text-[#333333]">Your Store</div>
-                    <div className="flex space-x-4">
-                      <span className="text-sm text-[#7A7A7A]">Cart (0)</span>
-                      <span className="text-sm text-[#7A7A7A]">Account</span>
+                  <div className="flex justify-between items-center pb-16 border-b border-neutral-light">
+                    <div className="text-h3 font-bold text-neutral-darkest font-satoshi">Your Store</div>
+                    <div className="flex space-x-16">
+                      <span className="text-small text-neutral-dark font-manrope">Cart (0)</span>
+                      <span className="text-small text-neutral-dark font-manrope">Account</span>
                     </div>
                   </div>
                   
                   {/* Hero Product */}
-                  <div className="grid md:grid-cols-2 gap-8">
-                    <div className="bg-[#F5F5F5] aspect-square rounded-lg flex items-center justify-center">
-                      <div className="text-[#7A7A7A] text-center">
-                        <div className="w-16 h-16 bg-[#D1D1D1] rounded-lg mx-auto mb-4"></div>
-                        <p>Product Image</p>
+                  <div className="grid md:grid-cols-2 gap-32">
+                    <div className="bg-neutral-light aspect-square rounded flex items-center justify-center">
+                      <div className="text-neutral-dark text-center">
+                        <div className="w-16 h-16 bg-neutral-mid rounded mx-auto mb-16"></div>
+                        <p className="font-manrope text-small">Product Image</p>
                       </div>
                     </div>
-                    <div className="space-y-4">
-                      <h2 className="text-2xl font-bold text-[#333333]">Featured Product</h2>
-                      <p className="text-[#7A7A7A]">Beautiful product description that converts visitors into customers.</p>
-                      <div className="text-3xl font-bold text-[#0B70B8]">$99.99</div>
-                      <button className="bg-[#0B70B8] text-white px-8 py-3 rounded font-semibold hover:bg-[#095a94] transition-colors">
+                    <div className="space-y-16">
+                      <h2 className="text-h3 font-bold text-neutral-darkest font-satoshi">Featured Product</h2>
+                      <p className="text-neutral-dark font-manrope text-body">Beautiful product description that converts visitors into customers.</p>
+                      <div className="text-h2 font-bold text-primary-blue font-satoshi">$99.99</div>
+                      <button className="bg-primary-blue text-white px-32 py-3 rounded font-semibold hover:bg-blue-700 transition-colors font-manrope text-body">
                         Add to Cart
                       </button>
                     </div>
                   </div>
                   
                   {/* Product Grid */}
-                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-16">
                     {[1, 2, 3, 4].map((i) => (
-                      <div key={i} className="space-y-2">
-                        <div className="bg-[#F5F5F5] aspect-square rounded-lg flex items-center justify-center">
-                          <div className="w-8 h-8 bg-[#D1D1D1] rounded"></div>
+                      <div key={i} className="space-y-8">
+                        <div className="bg-neutral-light aspect-square rounded flex items-center justify-center">
+                          <div className="w-8 h-8 bg-neutral-mid rounded"></div>
                         </div>
-                        <div className="text-sm font-semibold text-[#333333]">Product {i}</div>
-                        <div className="text-sm text-[#0B70B8] font-bold">$49.99</div>
+                        <div className="text-small font-semibold text-neutral-darkest font-manrope">Product {i}</div>
+                        <div className="text-small text-primary-blue font-bold font-manrope">$49.99</div>
                       </div>
                     ))}
                   </div>
@@ -101,11 +101,11 @@ function App() {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-[#0B70B8] text-white px-8 py-3 rounded font-semibold hover:bg-[#095a94] transition-colors">
+          <div className="flex flex-col sm:flex-row gap-16 justify-center">
+            <button className="bg-primary-blue text-white px-32 py-3 rounded font-semibold hover:bg-blue-700 transition-colors font-manrope text-body">
               Publish to My Shopify
             </button>
-            <button className="border-2 border-[#EE4D23] text-[#EE4D23] px-8 py-3 rounded font-semibold hover:bg-[#EE4D23] hover:text-white transition-colors">
+            <button className="border-2 border-secondary-orange text-secondary-orange px-32 py-3 rounded font-semibold hover:bg-secondary-orange hover:text-white transition-colors font-manrope text-body">
               Request Tweaks
             </button>
           </div>
@@ -113,76 +113,76 @@ function App() {
       </section>
 
       {/* Features Snapshot */}
-      <section id="features" className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8">
+      <section id="features" className="py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-16">
+          <div className="grid md:grid-cols-3 gap-32">
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-[#0B70B8] rounded-lg mb-4">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-blue rounded mb-16">
                 <Zap className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-lg font-semibold text-[#333333] mb-2">One-Click Go-Live</h3>
-              <p className="text-sm text-[#7A7A7A]">Launch your store instantly with zero technical setup required.</p>
+              <h3 className="text-body font-semibold text-neutral-darkest mb-8 font-space-grotesk">One-Click Go-Live</h3>
+              <p className="text-small text-neutral-dark font-manrope">Launch your store instantly with zero technical setup required.</p>
             </div>
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-[#0B70B8] rounded-lg mb-4">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-blue rounded mb-16">
                 <Palette className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-lg font-semibold text-[#333333] mb-2">Agency-Quality Design</h3>
-              <p className="text-sm text-[#7A7A7A]">Professional layouts that convert visitors into customers.</p>
+              <h3 className="text-body font-semibold text-neutral-darkest mb-8 font-space-grotesk">Agency-Quality Design</h3>
+              <p className="text-small text-neutral-dark font-manrope">Professional layouts that convert visitors into customers.</p>
             </div>
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-[#0B70B8] rounded-lg mb-4">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-blue rounded mb-16">
                 <Settings className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-lg font-semibold text-[#333333] mb-2">Hassle-Free Setup</h3>
-              <p className="text-sm text-[#7A7A7A]">We handle all the technical details so you can focus on selling.</p>
+              <h3 className="text-body font-semibold text-neutral-darkest mb-8 font-space-grotesk">Hassle-Free Setup</h3>
+              <p className="text-small text-neutral-dark font-manrope">We handle all the technical details so you can focus on selling.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* How It Works */}
-      <section className="py-16 bg-[#F5F5F5]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-[#333333] mb-4" style={{ lineHeight: '1.3' }}>
+      <section className="py-32 bg-neutral-light">
+        <div className="max-w-7xl mx-auto px-16">
+          <div className="text-center mb-32">
+            <h2 className="text-h2 font-bold text-neutral-darkest mb-16 font-satoshi">
               How It Works
             </h2>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-32">
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-[#0B70B8] rounded-full mb-6">
-                <span className="text-white font-bold text-lg">1</span>
+              <div className="inline-flex items-center justify-center w-12 h-12 bg-primary-blue rounded-full mb-16">
+                <span className="text-white font-bold text-body font-satoshi">1</span>
               </div>
-              <h3 className="text-xl font-bold text-[#333333] mb-4" style={{ lineHeight: '1.3' }}>
+              <h3 className="text-h4 font-bold text-neutral-darkest mb-16 font-satoshi">
                 We scrape your existing site
               </h3>
-              <p className="text-sm text-[#7A7A7A]" style={{ lineHeight: '1.4' }}>
+              <p className="text-small text-neutral-dark font-manrope">
                 Our system analyzes your current website and extracts all your products, images, and content.
               </p>
             </div>
             
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-[#0B70B8] rounded-full mb-6">
-                <span className="text-white font-bold text-lg">2</span>
+              <div className="inline-flex items-center justify-center w-12 h-12 bg-primary-blue rounded-full mb-16">
+                <span className="text-white font-bold text-body font-satoshi">2</span>
               </div>
-              <h3 className="text-xl font-bold text-[#333333] mb-4" style={{ lineHeight: '1.3' }}>
+              <h3 className="text-h4 font-bold text-neutral-darkest mb-16 font-satoshi">
                 We rebuild and optimize on Shopify
               </h3>
-              <p className="text-sm text-[#7A7A7A]" style={{ lineHeight: '1.4' }}>
+              <p className="text-small text-neutral-dark font-manrope">
                 Your content is transformed into a conversion-optimized Shopify store with modern design.
               </p>
             </div>
             
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-[#0B70B8] rounded-full mb-6">
-                <span className="text-white font-bold text-lg">3</span>
+              <div className="inline-flex items-center justify-center w-12 h-12 bg-primary-blue rounded-full mb-16">
+                <span className="text-white font-bold text-body font-satoshi">3</span>
               </div>
-              <h3 className="text-xl font-bold text-[#333333] mb-4" style={{ lineHeight: '1.3' }}>
+              <h3 className="text-h4 font-bold text-neutral-darkest mb-16 font-satoshi">
                 You preview → click publish → you're live
               </h3>
-              <p className="text-sm text-[#7A7A7A]" style={{ lineHeight: '1.4' }}>
+              <p className="text-small text-neutral-dark font-manrope">
                 Review your new store, request any tweaks, then publish directly to your Shopify account.
               </p>
             </div>
@@ -191,27 +191,27 @@ function App() {
       </section>
 
       {/* Preview Gallery */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-[#333333] mb-4">See More Pages</h2>
-            <p className="text-lg text-[#7A7A7A]">Your complete store includes all essential pages</p>
+      <section className="py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-16">
+          <div className="text-center mb-32">
+            <h2 className="text-h2 font-bold text-neutral-darkest mb-16 font-satoshi">See More Pages</h2>
+            <p className="text-body text-neutral-dark font-manrope">Your complete store includes all essential pages</p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-16">
             {[
               { title: 'Product Page', desc: 'Detailed product views' },
               { title: 'Shopping Cart', desc: 'Streamlined checkout' },
               { title: 'About Page', desc: 'Your brand story' },
               { title: 'Contact', desc: 'Customer support' }
             ].map((page, i) => (
-              <div key={i} className="bg-[#F5F5F5] rounded-lg p-6 aspect-square flex flex-col justify-between">
+              <div key={i} className="bg-neutral-light rounded p-16 aspect-square flex flex-col justify-between shadow-subtle">
                 <div className="flex-1 flex items-center justify-center">
-                  <div className="w-16 h-16 bg-[#D1D1D1] rounded-lg"></div>
+                  <div className="w-16 h-16 bg-neutral-mid rounded"></div>
                 </div>
                 <div className="text-center">
-                  <h4 className="font-semibold text-[#333333] mb-1">{page.title}</h4>
-                  <p className="text-sm text-[#7A7A7A]">{page.desc}</p>
+                  <h4 className="font-semibold text-neutral-darkest mb-1 font-manrope text-body">{page.title}</h4>
+                  <p className="text-small text-neutral-dark font-manrope">{page.desc}</p>
                 </div>
               </div>
             ))}
@@ -220,61 +220,61 @@ function App() {
       </section>
 
       {/* Pricing & Next Steps */}
-      <section className="py-16 bg-[#F5F5F5]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-[#333333] mb-4">What's Included</h2>
+      <section className="py-32 bg-neutral-light">
+        <div className="max-w-4xl mx-auto px-16">
+          <div className="text-center mb-32">
+            <h2 className="text-h2 font-bold text-neutral-darkest mb-16 font-satoshi">What's Included</h2>
           </div>
           
-          <div className="bg-white rounded-lg shadow-sm p-8">
-            <div className="grid md:grid-cols-2 gap-8">
+          <div className="bg-white rounded shadow-card p-32">
+            <div className="grid md:grid-cols-2 gap-32">
               <div>
-                <h3 className="text-xl font-bold text-[#333333] mb-4">Your Complete Store</h3>
-                <ul className="space-y-3">
+                <h3 className="text-h4 font-bold text-neutral-darkest mb-16 font-satoshi">Your Complete Store</h3>
+                <ul className="space-y-16">
                   <li className="flex items-start">
-                    <div className="w-2 h-2 bg-[#0B70B8] rounded-full mt-2 mr-3"></div>
-                    <span className="text-[#333333]">Professional theme customization</span>
+                    <div className="w-2 h-2 bg-primary-blue rounded-full mt-2 mr-3"></div>
+                    <span className="text-neutral-darkest font-manrope text-body">Professional theme customization</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="w-2 h-2 bg-[#0B70B8] rounded-full mt-2 mr-3"></div>
-                    <span className="text-[#333333]">All products imported and optimized</span>
+                    <div className="w-2 h-2 bg-primary-blue rounded-full mt-2 mr-3"></div>
+                    <span className="text-neutral-darkest font-manrope text-body">All products imported and optimized</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="w-2 h-2 bg-[#0B70B8] rounded-full mt-2 mr-3"></div>
-                    <span className="text-[#333333]">Mobile-responsive design</span>
+                    <div className="w-2 h-2 bg-primary-blue rounded-full mt-2 mr-3"></div>
+                    <span className="text-neutral-darkest font-manrope text-body">Mobile-responsive design</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="w-2 h-2 bg-[#0B70B8] rounded-full mt-2 mr-3"></div>
-                    <span className="text-[#333333]">SEO optimization</span>
+                    <div className="w-2 h-2 bg-primary-blue rounded-full mt-2 mr-3"></div>
+                    <span className="text-neutral-darkest font-manrope text-body">SEO optimization</span>
                   </li>
                 </ul>
               </div>
               
               <div>
-                <h3 className="text-xl font-bold text-[#333333] mb-4">Support & Service</h3>
-                <ul className="space-y-3">
+                <h3 className="text-h4 font-bold text-neutral-darkest mb-16 font-satoshi">Support & Service</h3>
+                <ul className="space-y-16">
                   <li className="flex items-start">
-                    <div className="w-2 h-2 bg-[#0B70B8] rounded-full mt-2 mr-3"></div>
-                    <span className="text-[#333333]">Free revision requests</span>
+                    <div className="w-2 h-2 bg-primary-blue rounded-full mt-2 mr-3"></div>
+                    <span className="text-neutral-darkest font-manrope text-body">Free revision requests</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="w-2 h-2 bg-[#0B70B8] rounded-full mt-2 mr-3"></div>
-                    <span className="text-[#333333]">30-day launch guarantee</span>
+                    <div className="w-2 h-2 bg-primary-blue rounded-full mt-2 mr-3"></div>
+                    <span className="text-neutral-darkest font-manrope text-body">30-day launch guarantee</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="w-2 h-2 bg-[#0B70B8] rounded-full mt-2 mr-3"></div>
-                    <span className="text-[#333333]">Direct Shopify integration</span>
+                    <div className="w-2 h-2 bg-primary-blue rounded-full mt-2 mr-3"></div>
+                    <span className="text-neutral-darkest font-manrope text-body">Direct Shopify integration</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="w-2 h-2 bg-[#0B70B8] rounded-full mt-2 mr-3"></div>
-                    <span className="text-[#333333]">Technical support included</span>
+                    <div className="w-2 h-2 bg-primary-blue rounded-full mt-2 mr-3"></div>
+                    <span className="text-neutral-darkest font-manrope text-body">Technical support included</span>
                   </li>
                 </ul>
               </div>
             </div>
             
-            <div className="text-center mt-8">
-              <button className="bg-[#0B70B8] text-white px-8 py-3 rounded font-semibold hover:bg-[#095a94] transition-colors">
+            <div className="text-center mt-32">
+              <button className="bg-primary-blue text-white px-32 py-3 rounded font-semibold hover:bg-blue-700 transition-colors font-manrope text-body">
                 Yes, I'm In
               </button>
             </div>
@@ -283,22 +283,22 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#333333] text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <footer className="bg-neutral-darkest text-white py-32">
+        <div className="max-w-7xl mx-auto px-16">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex items-center mb-4 md:mb-0">
-              <Monitor className="h-6 w-6 text-[#0B70B8]" />
-              <span className="ml-2 text-lg font-bold">StorePreview</span>
+            <div className="flex items-center mb-16 md:mb-0">
+              <Monitor className="h-6 w-6 text-primary-blue" />
+              <span className="ml-2 text-body font-bold font-satoshi">StorePreview</span>
             </div>
             
-            <div className="flex space-x-6 mb-4 md:mb-0">
-              <a href="#" className="text-[#D1D1D1] hover:text-white transition-colors">Terms</a>
-              <a href="#" className="text-[#D1D1D1] hover:text-white transition-colors">Privacy</a>
-              <a href="#" className="text-[#D1D1D1] hover:text-white transition-colors">Contact</a>
+            <div className="flex space-x-16 mb-16 md:mb-0">
+              <a href="#" className="text-neutral-mid hover:text-white transition-colors font-manrope text-body">Terms</a>
+              <a href="#" className="text-neutral-mid hover:text-white transition-colors font-manrope text-body">Privacy</a>
+              <a href="#" className="text-neutral-mid hover:text-white transition-colors font-manrope text-body">Contact</a>
             </div>
             
-            <div className="text-[#D1D1D1]">
-              Need help? <a href="mailto:support@storepreview.com" className="text-[#0B70B8] hover:underline">support@storepreview.com</a>
+            <div className="text-neutral-mid font-manrope text-body">
+              Need help? <a href="mailto:support@storepreview.com" className="text-primary-blue hover:underline">support@storepreview.com</a>
             </div>
           </div>
         </div>
