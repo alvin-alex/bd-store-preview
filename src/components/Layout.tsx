@@ -88,7 +88,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
                 to="/"
                 className="focus:outline-none"
               >
-                <img src="/src/logo/10.svg" alt="BeautifullyDone Logo" className="h-12 w-12" />
+                <img src="/logo-10.svg" alt="BeautifullyDone Logo" className="h-12 w-12" />
               </Link>
             </div>
             <nav className="hidden md:flex space-x-8">
@@ -126,7 +126,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
                   rel="noopener noreferrer"
                   className="flex items-center focus:outline-none"
                 >
-                  <img src="/src/logo/10.svg" alt="BeautifullyDone Logo" className="h-24 w-24" />
+                  <img src="/logo-10.svg" alt="BeautifullyDone Logo" className="h-24 w-24" />
                   <span className="ml-2 text-h1 font-bold font-cabinet text-white">BeautifullyDone</span>
                 </a>
               </div>
