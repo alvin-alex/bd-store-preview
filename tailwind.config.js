@@ -4,16 +4,31 @@ export default {
   theme: {
     extend: {
       colors: {
+        // Core Palette
         'primary-blue': '#0B70B8',
+        'primary-blue-light': '#4392D1',
+        'primary-blue-dark': '#085A94',
         'secondary-orange': '#EE4D23',
+        'secondary-orange-light': '#F37B5E',
+        'secondary-orange-dark': '#BE3E1B',
+        
+        // Accent Palette
         'accent-yellow': '#FFD30A',
         'accent-teal': '#00BFA5',
         'accent-red': '#E63946',
-        'neutral-lightest': '#FFFAFA',
+        
+        // Neutral Palette
+        'neutral-white': '#FFFAFA',
         'neutral-light': '#F5F5F5',
         'neutral-mid': '#D1D1D1',
         'neutral-dark': '#7A7A7A',
-        'neutral-darkest': '#333333',
+        'neutral-black': '#333333',
+        
+        // Semantic Palette
+        'success-teal': '#00BFA5',
+        'warning-yellow': '#FFD30A',
+        'error-red': '#E63946',
+        'info-blue': '#4392D1',
       },
       fontFamily: {
         'satoshi': ['Satoshi', 'sans-serif'],
