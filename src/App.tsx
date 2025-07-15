@@ -333,7 +333,7 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-theme-text text-theme-bg py-32">
+      <footer className="bg-theme-bg text-theme-text py-32 border-t border-theme-border border-opacity-20">
         <div className="max-w-7xl mx-auto px-16">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-16 md:mb-0">
@@ -342,9 +342,9 @@ function App() {
             </div>
             
             <div className="flex space-x-16 mb-16 md:mb-0">
-              <a href="#" className="text-theme-text-secondary hover:text-theme-bg transition-colors font-manrope text-body">Terms</a>
-              <a href="#" className="text-theme-text-secondary hover:text-theme-bg transition-colors font-manrope text-body">Privacy</a>
-              <a href="#" className="text-theme-text-secondary hover:text-theme-bg transition-colors font-manrope text-body">Contact</a>
+              <a href="#" className="text-theme-text-secondary hover:text-theme-primary transition-colors font-manrope text-body">Terms</a>
+              <a href="#" className="text-theme-text-secondary hover:text-theme-primary transition-colors font-manrope text-body">Privacy</a>
+              <a href="#" className="text-theme-text-secondary hover:text-theme-primary transition-colors font-manrope text-body">Contact</a>
             </div>
             
             <div className="text-theme-text-secondary font-manrope text-body">
