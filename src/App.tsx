@@ -77,7 +77,14 @@ function App() {
         <div className="max-w-7xl mx-auto px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
-              <img src="/src/logo/10.svg" alt="BeautifullyDone Logo" className="h-12 w-12" />
+              <a 
+                href="https://beautifullydone.store" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-bg rounded"
+              >
+                <img src="/src/logo/10.svg" alt="BeautifullyDone Logo" className="h-12 w-12" />
+              </a>
             </div>
             <nav className="hidden md:flex space-x-8">
             </nav>
@@ -233,8 +240,15 @@ function App() {
             {/* First Row */}
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="flex items-center mb-16 md:mb-0">
-                <img src="/src/logo/10.svg" alt="BeautifullyDone Logo" className="h-12 w-12" />
-                <span className="ml-2 text-h4 font-bold font-cabinet text-white">BeautifullyDone</span>
+                <a 
+                  href="https://beautifullydone.store" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-bg rounded"
+                >
+                  <img src="/src/logo/10.svg" alt="BeautifullyDone Logo" className="h-24 w-24" />
+                  <span className="ml-2 text-h1 font-bold font-cabinet text-white">BeautifullyDone</span>
+                </a>
               </div>
               
               <div className="text-theme-text-secondary font-manrope text-body">
