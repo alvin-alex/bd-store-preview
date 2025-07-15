@@ -58,9 +58,43 @@ interface LayoutProps {
 
 export const Layout: React.FC<LayoutProps> = ({ children }) => {
   const [isRequestTweaksModalOpen, setIsRequestTweaksModalOpen] = useState(false);
+  const [isDark, setIsDark] = useState(false);
   const { announceFocusChange } = useFocusManager();
   const location = useLocation();
   const isHomePage = location.pathname === '/';
+
+  // Sync theme state with localStorage and system preference
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    const shouldUseDark = savedTheme ? savedTheme === 'dark' : systemPrefersDark;
+    setIsDark(shouldUseDark);
+
+    // Listen for theme changes
+    const handleStorageChange = () => {
+      const newTheme = localStorage.getItem('theme');
+      setIsDark(newTheme === 'dark');
+    };
+
+    window.addEventListener('storage', handleStorageChange);
+    
+    // Also listen for changes to the HTML class
+    const observer = new MutationObserver(() => {
+      const htmlElement = document.documentElement;
+      setIsDark(htmlElement.classList.contains('dark'));
+    });
+    
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class']
+    });
+
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+      observer.disconnect();
+    };
+  }, []);
 
   // Handle CTA button clicks with focus management
   const handlePublishClick = () => {
@@ -71,6 +105,9 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
   const handleRequestTweaksClick = () => {
     setIsRequestTweaksModalOpen(true);
   };
+
+  // Choose logo based on theme
+  const logoSrc = isDark ? '/logo-10.svg' : '/logo-11.svg';
 
   return (
     <div className="min-h-screen bg-theme-bg font-manrope">
@@ -88,7 +125,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
                 to="/"
                 className="focus:outline-none"
               >
-                <img src="/logo-10.svg" alt="BeautifullyDone Logo" className="h-12 w-12" />
+                <img src={logoSrc} alt="BeautifullyDone Logo" className="h-12 w-12" />
               </Link>
             </div>
             <nav className="hidden md:flex space-x-8">
@@ -126,7 +163,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
                   rel="noopener noreferrer"
                   className="flex items-center focus:outline-none"
                 >
-                  <img src="/logo-10.svg" alt="BeautifullyDone Logo" className="h-24 w-24" />
+                  <img src={logoSrc} alt="BeautifullyDone Logo" className="h-24 w-24" />
                   <span className="ml-2 text-h1 font-bold font-cabinet text-white">BeautifullyDone</span>
                 </a>
               </div>
