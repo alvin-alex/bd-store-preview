@@ -29,7 +29,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="text-4xl lg:text-5xl font-bold text-[#333333] mb-6" style={{ lineHeight: '1.2' }}>
-              Your New Shopify Store Is Ready
+              You're store, BeautifullyDone.
             </h1>
             <p className="text-lg text-[#7A7A7A] max-w-2xl mx-auto" style={{ lineHeight: '1.5' }}>
               We've scraped, redesigned, and packaged your site into a live Shopify demo. Take a look.
