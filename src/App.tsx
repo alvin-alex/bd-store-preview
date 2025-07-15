@@ -162,6 +162,35 @@ function App() {
         </div>
       </section>
 
+      {/* Preview Gallery */}
+      <section className="py-32 bg-theme-bg">
+        <div className="max-w-7xl mx-auto px-16">
+          <div className="text-center mb-32">
+            <h2 className="text-h2 font-bold text-theme-primary mb-16 font-cabinet">See More Pages</h2>
+            <p className="text-body text-theme-text-secondary font-manrope">Your complete store includes all essential pages</p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-16">
+            {[
+              { title: 'Product Page', desc: 'Detailed product views' },
+              { title: 'Shopping Cart', desc: 'Streamlined checkout' },
+              { title: 'About Page', desc: 'Your brand story' },
+              { title: 'Contact', desc: 'Customer support' }
+            ].map((page, i) => (
+              <div key={i} className="bg-theme-surface rounded p-16 aspect-square flex flex-col justify-between shadow-subtle dark:shadow-subtle-dark border border-theme-border border-opacity-20">
+                <div className="flex-1 flex items-center justify-center">
+                  <div className="w-16 h-16 bg-theme-border rounded"></div>
+                </div>
+                <div className="text-center">
+                  <h4 className="font-semibold text-theme-text mb-1 font-manrope text-body">{page.title}</h4>
+                  <p className="text-small text-theme-text-secondary font-manrope">{page.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Features Snapshot */}
       <section id="features" className="py-32 bg-theme-bg">
         <div className="max-w-7xl mx-auto px-16">
@@ -236,35 +265,6 @@ function App() {
                 Review your new store, request any tweaks, then publish directly to your Shopify account.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Preview Gallery */}
-      <section className="py-32 bg-theme-bg">
-        <div className="max-w-7xl mx-auto px-16">
-          <div className="text-center mb-32">
-            <h2 className="text-h2 font-bold text-theme-primary mb-16 font-cabinet">See More Pages</h2>
-            <p className="text-body text-theme-text-secondary font-manrope">Your complete store includes all essential pages</p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-16">
-            {[
-              { title: 'Product Page', desc: 'Detailed product views' },
-              { title: 'Shopping Cart', desc: 'Streamlined checkout' },
-              { title: 'About Page', desc: 'Your brand story' },
-              { title: 'Contact', desc: 'Customer support' }
-            ].map((page, i) => (
-              <div key={i} className="bg-theme-surface rounded p-16 aspect-square flex flex-col justify-between shadow-subtle dark:shadow-subtle-dark border border-theme-border">
-                <div className="flex-1 flex items-center justify-center">
-                  <div className="w-16 h-16 bg-theme-border rounded"></div>
-                </div>
-                <div className="text-center">
-                  <h4 className="font-semibold text-theme-text mb-1 font-manrope text-body">{page.title}</h4>
-                  <p className="text-small text-theme-text-secondary font-manrope">{page.desc}</p>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
