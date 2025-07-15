@@ -77,8 +77,8 @@ function App() {
         <div className="max-w-7xl mx-auto px-16">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <Monitor className="h-8 w-8 text-theme-primary" />
-              <span className="ml-2 text-xl font-bold text-theme-text font-cabinet">StorePreview</span>
+              <img src="/src/logo/10.svg" alt="BeautifullyDone Logo" className="h-8 w-8" />
+              <span className="ml-2 text-xl font-bold text-theme-text font-cabinet">BeautifullyDone</span>
             </div>
             <nav className="hidden md:flex space-x-32">
             </nav>
@@ -234,16 +234,16 @@ function App() {
             {/* First Row */}
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="flex items-center mb-16 md:mb-0">
-                <Monitor className="h-6 w-6 text-theme-primary" />
-                <span className="ml-2 text-body font-bold font-cabinet text-theme-primary">StorePreview</span>
+                <img src="/src/logo/10.svg" alt="BeautifullyDone Logo" className="h-6 w-6" />
+                <span className="ml-2 text-body font-bold font-cabinet text-theme-primary">BeautifullyDone</span>
               </div>
               
               <div className="text-theme-text-secondary font-manrope text-body">
                 Need help? <a 
-                  href="mailto:support@storepreview.com" 
+                  href="mailto:support@beautifullydone.com" 
                   className="text-theme-primary hover:underline focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-bg rounded"
                 >
-                  support@storepreview.com
+                  support@beautifullydone.com
                 </a>
               </div>
             </div>
