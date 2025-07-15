@@ -66,7 +66,7 @@ function App() {
             </nav>
             <div className="flex items-center space-x-4">
               <ThemeToggle />
-              <button className="bg-trae-neutral-button-bg text-trae-neutral-button-text px-16 py-2 rounded text-small font-semibold hover:bg-gray-100 transition-colors font-manrope border border-theme-primary border-opacity-50">
+              <button className="bg-trae-neutral-button-bg text-trae-neutral-button-text px-16 py-2 rounded text-small font-semibold hover:bg-gray-100 transition-colors font-manrope border border-theme-primary">
                 Claim Your Store
               </button>
             </div>
@@ -88,9 +88,9 @@ function App() {
 
           {/* Browser Mockup */}
           <div className="max-w-5xl mx-auto mb-32">
-            <div className="bg-theme-surface rounded shadow-card dark:shadow-card-dark overflow-hidden border-0">
+            <div className="bg-theme-surface rounded shadow-card dark:shadow-card-dark overflow-hidden border border-theme-border">
               {/* Browser Header */}
-              <div className="bg-theme-surface p-16 flex items-center space-x-8 border-b border-theme-border border-opacity-30">
+              <div className="bg-theme-surface p-16 flex items-center space-x-8 border-b border-theme-border">
                 <div className="flex space-x-8">
                   <div className="w-3 h-3 bg-accent-red rounded-full"></div>
                   <div className="w-3 h-3 bg-accent-yellow rounded-full"></div>
@@ -107,7 +107,7 @@ function App() {
               <div className="p-32 bg-theme-bg">
                 <div className="space-y-32">
                   {/* Store Header */}
-                  <div className="flex justify-between items-center pb-16 border-b border-theme-border border-opacity-20">
+                  <div className="flex justify-between items-center pb-16 border-b border-theme-border">
                     <div className="text-h3 font-bold text-theme-text font-cabinet">Your Store</div>
                     <div className="flex space-x-16">
                       <span className="text-small text-theme-text-secondary font-manrope">Cart (0)</span>
@@ -154,11 +154,8 @@ function App() {
           <div className="flex flex-col sm:flex-row gap-16 justify-center">
             <button className="bg-gradient-to-r from-trae-cta-gradient-start via-trae-cta-gradient-mid to-trae-cta-gradient-end text-white px-32 py-3 rounded font-semibold hover:opacity-90 transition-opacity font-manrope text-body">
               Publish to My Shopify
-          <div className="flex flex-col sm:flex-row gap-16 justify-center">
-            <button className="bg-gradient-to-r from-trae-cta-gradient-start via-trae-cta-gradient-mid to-trae-cta-gradient-end text-white px-32 py-3 rounded font-semibold hover:opacity-90 transition-opacity font-manrope text-body">
-              Publish to My Shopify
             </button>
-            <button className="border border-theme-secondary text-theme-secondary px-32 py-3 rounded font-semibold hover:bg-theme-secondary hover:text-white transition-colors font-manrope text-body border-opacity-40">
+            <button className="border-2 border-theme-secondary text-theme-secondary px-32 py-3 rounded font-semibold hover:bg-theme-secondary hover:text-white transition-colors font-manrope text-body">
               Request Tweaks
             </button>
           </div>
@@ -258,7 +255,7 @@ function App() {
               { title: 'About Page', desc: 'Your brand story' },
               { title: 'Contact', desc: 'Customer support' }
             ].map((page, i) => (
-              <div key={i} className="bg-theme-surface rounded p-16 aspect-square flex flex-col justify-between shadow-subtle dark:shadow-subtle-dark border border-theme-border border-opacity-20">
+              <div key={i} className="bg-theme-surface rounded p-16 aspect-square flex flex-col justify-between shadow-subtle dark:shadow-subtle-dark border border-theme-border">
                 <div className="flex-1 flex items-center justify-center">
                   <div className="w-16 h-16 bg-theme-border rounded"></div>
                 </div>
@@ -279,7 +276,7 @@ function App() {
             <h2 className="text-h2 font-bold text-theme-primary mb-16 font-cabinet">What's Included</h2>
           </div>
           
-          <div className="bg-theme-bg rounded shadow-card dark:shadow-card-dark p-32 border border-theme-border border-opacity-30">
+          <div className="bg-theme-bg rounded shadow-card dark:shadow-card-dark p-32 border border-theme-border">
             <div className="grid md:grid-cols-2 gap-32">
               <div>
                 <h3 className="text-h4 font-bold text-theme-primary mb-16 font-cabinet">Your Complete Store</h3>
@@ -327,7 +324,7 @@ function App() {
             </div>
             
             <div className="text-center mt-32">
-              <button className="bg-trae-neutral-button-bg text-theme-primary px-32 py-3 rounded font-semibold hover:bg-gray-100 transition-colors font-manrope text-body border border-theme-primary border-opacity-50">
+              <button className="bg-trae-neutral-button-bg text-theme-primary px-32 py-3 rounded font-semibold hover:bg-gray-100 transition-colors font-manrope text-body border border-theme-primary">
                 Yes, I'm In
               </button>
             </div>
