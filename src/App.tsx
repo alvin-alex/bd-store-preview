@@ -233,16 +233,16 @@ function App() {
             {/* First Row */}
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="flex items-center mb-16 md:mb-0">
-                <img src="/src/logo/10.svg" alt="BeautifullyDone Logo" className="h-6 w-6" />
-                <span className="ml-2 text-body font-bold font-cabinet text-theme-primary">BeautifullyDone</span>
+                <img src="/src/logo/10.svg" alt="BeautifullyDone Logo" className="h-12 w-12" />
+                <span className="ml-2 text-h4 font-bold font-cabinet text-white">BeautifullyDone</span>
               </div>
               
               <div className="text-theme-text-secondary font-manrope text-body">
                 Need help? <a 
-                  href="mailto:support@beautifullydone.store" 
+                  href="mailto:support@beautifullydone.com" 
                   className="text-theme-primary hover:underline focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-bg rounded"
                 >
-                  support@beautifullydone.store
+                  support@beautifullydone.com
                 </a>
               </div>
             </div>
