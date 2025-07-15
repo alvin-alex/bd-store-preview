@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Monitor, Zap, Palette, Settings, Moon, Sun } from 'lucide-react';
+import { SkipLinks } from './components/SkipLinks';
+import { RequestTweaksModal } from './components/Modal';
+import { useFocusManager } from './hooks/useFocusManager';
 
 function ThemeToggle() {
   const [isDark, setIsDark] = useState(false);
@@ -49,10 +52,28 @@ function ThemeToggle() {
 }
 
 function App() {
+  const [isRequestTweaksModalOpen, setIsRequestTweaksModalOpen] = useState(false);
+  const { announceFocusChange } = useFocusManager();
+
+  // Handle CTA button clicks with focus management
+  const handlePublishClick = () => {
+    announceFocusChange('Redirecting to Shopify publishing...');
+    // Add your publishing logic here
+  };
+
+  const handleRequestTweaksClick = () => {
+    setIsRequestTweaksModalOpen(true);
+  };
+
   return (
     <div className="min-h-screen bg-theme-bg font-manrope">
+      <SkipLinks />
+      
       {/* Header */}
-      <header className="bg-theme-bg shadow-subtle dark:shadow-subtle-dark sticky top-0 z-50">
+      <header 
+        className="bg-theme-bg shadow-subtle dark:shadow-subtle-dark sticky top-0 z-50"
+        role="banner"
+      >
         <div className="max-w-7xl mx-auto px-16">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
@@ -60,13 +81,43 @@ function App() {
               <span className="ml-2 text-xl font-bold text-theme-text font-cabinet">StorePreview</span>
             </div>
             <nav className="hidden md:flex space-x-32">
-              <a href="#preview" className="text-theme-text hover:text-theme-primary transition-colors font-manrope text-body">Preview</a>
-              <a href="#features" className="text-theme-text hover:text-theme-primary transition-colors font-manrope text-body">Features</a>
-              <a href="#support" className="text-theme-text hover:text-theme-primary transition-colors font-manrope text-body">Support</a>
+              <a 
+                href="#preview-section" 
+                className="text-theme-text hover:text-theme-primary transition-colors font-manrope text-body focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-bg rounded"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('preview-section')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                Preview
+              </a>
+              <a 
+                href="#pages-section" 
+                className="text-theme-text hover:text-theme-primary transition-colors font-manrope text-body focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-bg rounded"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('pages-section')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                Pages
+              </a>
+              <a 
+                href="#footer" 
+                className="text-theme-text hover:text-theme-primary transition-colors font-manrope text-body focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-bg rounded"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('footer')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                Contact
+              </a>
             </nav>
             <div className="flex items-center space-x-4">
               <ThemeToggle />
-              <button className="bg-trae-neutral-button-bg text-theme-primary px-16 py-2 rounded text-small font-semibold hover:bg-gray-100 transition-colors font-manrope border border-theme-primary">
+              <button 
+                className="bg-trae-neutral-button-bg text-theme-primary px-16 py-2 rounded text-small font-semibold hover:bg-gray-100 transition-colors font-manrope border border-theme-primary focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-bg"
+                onClick={handlePublishClick}
+              >
                 Claim Your Store
               </button>
             </div>
@@ -75,7 +126,8 @@ function App() {
       </header>
 
       {/* Hero Preview Section */}
-      <section id="preview" className="py-16 lg:py-32">
+      <main id="main-content" role="main">
+        <section id="preview-section" className="py-16 lg:py-32">
         <div className="max-w-7xl mx-auto px-16">
           <div className="text-center mb-32">
             <h1 className="text-h1 font-bold text-theme-primary mb-16 font-cabinet">
@@ -152,18 +204,25 @@ function App() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-16 justify-center">
-            <button className="bg-gradient-to-r from-theme-primary via-trae-cta-gradient-mid to-trae-cta-gradient-end text-white px-32 py-3 rounded font-semibold hover:opacity-90 transition-opacity font-manrope text-body">
+            <button 
+              className="bg-gradient-to-r from-theme-primary via-trae-cta-gradient-mid to-trae-cta-gradient-end text-white px-32 py-3 rounded font-semibold hover:opacity-90 transition-opacity font-manrope text-body focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-theme-bg"
+              onClick={handlePublishClick}
+            >
               Publish to My Shopify
             </button>
-            <button className="border-2 border-theme-primary text-theme-primary px-32 py-3 rounded font-semibold hover:bg-theme-primary hover:text-white transition-colors font-manrope text-body">
+            <button 
+              className="border-2 border-theme-primary text-theme-primary px-32 py-3 rounded font-semibold hover:bg-theme-primary hover:text-white transition-colors font-manrope text-body focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-bg"
+              onClick={handleRequestTweaksClick}
+            >
               Request Tweaks
             </button>
           </div>
         </div>
       </section>
+      </main>
 
       {/* Preview Gallery */}
-      <section className="py-32 bg-theme-bg">
+      <section id="pages-section" className="py-32 bg-theme-bg">
         <div className="max-w-7xl mx-auto px-16">
           <div className="text-center mb-32">
             <h2 className="text-h2 font-bold text-theme-primary mb-16 font-cabinet">See More Pages</h2>
@@ -178,7 +237,11 @@ function App() {
               { title: 'Contact', desc: 'Customer support' }
             ].map((page, i) => (
               <div key={i} className="bg-theme-surface rounded p-16 aspect-square flex flex-col justify-between shadow-subtle dark:shadow-subtle-dark border border-theme-border border-opacity-20">
-                <div className="flex-1 flex items-center justify-center">
+                <div 
+                  className="flex-1 flex items-center justify-center"
+                  role="img"
+                  aria-label={`${page.title} preview`}
+                >
                   <div className="w-16 h-16 bg-theme-border rounded"></div>
                 </div>
                 <div className="text-center">
@@ -192,7 +255,7 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-theme-bg text-theme-text py-32">
+      <footer id="footer" className="bg-theme-bg text-theme-text py-32" role="contentinfo">
         <div className="max-w-7xl mx-auto px-16">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-16 md:mb-0">
@@ -201,17 +264,43 @@ function App() {
             </div>
             
             <div className="flex space-x-16 mb-16 md:mb-0">
-              <a href="#" className="text-theme-text-secondary hover:text-theme-primary transition-colors font-manrope text-body">Terms</a>
-              <a href="#" className="text-theme-text-secondary hover:text-theme-primary transition-colors font-manrope text-body">Privacy</a>
-              <a href="#" className="text-theme-text-secondary hover:text-theme-primary transition-colors font-manrope text-body">Contact</a>
+              <a 
+                href="#" 
+                className="text-theme-text-secondary hover:text-theme-primary transition-colors font-manrope text-body focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-bg rounded"
+              >
+                Terms
+              </a>
+              <a 
+                href="#" 
+                className="text-theme-text-secondary hover:text-theme-primary transition-colors font-manrope text-body focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-bg rounded"
+              >
+                Privacy
+              </a>
+              <a 
+                href="#" 
+                className="text-theme-text-secondary hover:text-theme-primary transition-colors font-manrope text-body focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-bg rounded"
+              >
+                Contact
+              </a>
             </div>
             
             <div className="text-theme-text-secondary font-manrope text-body">
-              Need help? <a href="mailto:support@storepreview.com" className="text-theme-primary hover:underline">support@storepreview.com</a>
+              Need help? <a 
+                href="mailto:support@storepreview.com" 
+                className="text-theme-primary hover:underline focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-bg rounded"
+              >
+                support@storepreview.com
+              </a>
             </div>
           </div>
         </div>
       </footer>
+      
+      {/* Modal */}
+      <RequestTweaksModal 
+        isOpen={isRequestTweaksModalOpen} 
+        onClose={() => setIsRequestTweaksModalOpen(false)} 
+      />
     </div>
   );
 }
