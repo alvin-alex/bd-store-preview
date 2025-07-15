@@ -6,9 +6,9 @@ export default {
     extend: {
       colors: {
         // Core Palette
-        'primary-blue': '#E8C6C6',
-        'primary-blue-light': '#F0D0D0',
-        'primary-blue-dark': '#D0B0B0',
+        'primary-blue': '#fe696e',
+        'primary-blue-light': '#FF8C90',
+        'primary-blue-dark': '#E05C60',
         'secondary-orange': '#EE6C4D',
         'secondary-orange-light': '#F4917A',
         'secondary-orange-dark': '#C75A3F',
