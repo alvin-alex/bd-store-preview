@@ -81,41 +81,11 @@ function App() {
               <span className="ml-2 text-xl font-bold text-theme-text font-cabinet">StorePreview</span>
             </div>
             <nav className="hidden md:flex space-x-32">
-              <a 
-                href="#preview-section" 
-                className="text-theme-text hover:text-theme-primary transition-colors font-manrope text-body focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-bg rounded"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.getElementById('preview-section')?.scrollIntoView({ behavior: 'smooth' });
-                }}
-              >
-                Preview
-              </a>
-              <a 
-                href="#pages-section" 
-                className="text-theme-text hover:text-theme-primary transition-colors font-manrope text-body focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-bg rounded"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.getElementById('pages-section')?.scrollIntoView({ behavior: 'smooth' });
-                }}
-              >
-                Pages
-              </a>
-              <a 
-                href="#footer" 
-                className="text-theme-text hover:text-theme-primary transition-colors font-manrope text-body focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-bg rounded"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.getElementById('footer')?.scrollIntoView({ behavior: 'smooth' });
-                }}
-              >
-                Contact
-              </a>
             </nav>
             <div className="flex items-center space-x-4">
               <ThemeToggle />
               <button 
-                className="bg-trae-neutral-button-bg text-theme-primary px-16 py-2 rounded text-small font-semibold hover:bg-gray-100 transition-colors font-manrope border border-theme-primary focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-bg"
+                className="bg-gradient-to-r from-theme-primary via-trae-cta-gradient-mid to-trae-cta-gradient-end text-white px-16 py-2 rounded text-small font-semibold hover:opacity-90 transition-opacity font-manrope focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-theme-bg"
                 onClick={handlePublishClick}
               >
                 Claim Your Store
@@ -257,13 +227,26 @@ function App() {
       {/* Footer */}
       <footer id="footer" className="bg-theme-bg text-theme-text py-32" role="contentinfo">
         <div className="max-w-7xl mx-auto px-16">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex items-center mb-16 md:mb-0">
-              <Monitor className="h-6 w-6 text-theme-primary" />
-              <span className="ml-2 text-body font-bold font-cabinet text-theme-primary">StorePreview</span>
+          <div className="space-y-16">
+            {/* First Row */}
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <div className="flex items-center mb-16 md:mb-0">
+                <Monitor className="h-6 w-6 text-theme-primary" />
+                <span className="ml-2 text-body font-bold font-cabinet text-theme-primary">StorePreview</span>
+              </div>
+              
+              <div className="text-theme-text-secondary font-manrope text-body">
+                Need help? <a 
+                  href="mailto:support@storepreview.com" 
+                  className="text-theme-primary hover:underline focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-bg rounded"
+                >
+                  support@storepreview.com
+                </a>
+              </div>
             </div>
             
-            <div className="flex space-x-16 mb-16 md:mb-0">
+            {/* Second Row */}
+            <div className="flex justify-center space-x-16">
               <a 
                 href="#" 
                 className="text-theme-text-secondary hover:text-theme-primary transition-colors font-manrope text-body focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-bg rounded"
@@ -281,15 +264,6 @@ function App() {
                 className="text-theme-text-secondary hover:text-theme-primary transition-colors font-manrope text-body focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-bg rounded"
               >
                 Contact
-              </a>
-            </div>
-            
-            <div className="text-theme-text-secondary font-manrope text-body">
-              Need help? <a 
-                href="mailto:support@storepreview.com" 
-                className="text-theme-primary hover:underline focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-bg rounded"
-              >
-                support@storepreview.com
               </a>
             </div>
           </div>
