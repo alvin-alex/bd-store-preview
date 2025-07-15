@@ -164,7 +164,6 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
                   className="flex items-center focus:outline-none"
                 >
                   <img src={logoSrc} alt="BeautifullyDone Logo" className="h-24 w-24" />
-                  <span className="ml-2 text-h1 font-bold font-cabinet text-white">BeautifullyDone</span>
                   <span className="ml-2 text-h1 font-bold font-cabinet text-neutral-black">BeautifullyDone</span>
                 </a>
               </div>
