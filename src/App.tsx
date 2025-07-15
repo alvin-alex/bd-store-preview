@@ -78,7 +78,6 @@ function App() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <img src="/src/logo/10.svg" alt="BeautifullyDone Logo" className="h-8 w-8" />
-              <span className="ml-2 text-xl font-bold text-theme-text font-cabinet">BeautifullyDone</span>
             </div>
             <nav className="hidden md:flex space-x-32">
             </nav>
