@@ -52,7 +52,7 @@ function App() {
   return (
     <div className="min-h-screen bg-theme-bg font-manrope">
       {/* Header */}
-      <header className="bg-theme-bg shadow-subtle dark:shadow-subtle-dark sticky top-0 z-50 border-b border-theme-border">
+      <header className="bg-theme-bg shadow-subtle dark:shadow-subtle-dark sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-16">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
@@ -66,7 +66,7 @@ function App() {
             </nav>
             <div className="flex items-center space-x-4">
               <ThemeToggle />
-              <button className="bg-trae-neutral-button-bg text-trae-neutral-button-text px-16 py-2 rounded text-small font-semibold hover:bg-gray-100 transition-colors font-manrope border border-theme-primary">
+              <button className="bg-trae-neutral-button-bg text-theme-primary px-16 py-2 rounded text-small font-semibold hover:bg-gray-100 transition-colors font-manrope border border-theme-primary">
                 Claim Your Store
               </button>
             </div>
@@ -152,10 +152,10 @@ function App() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-16 justify-center">
-            <button className="bg-gradient-to-r from-trae-cta-gradient-start via-trae-cta-gradient-mid to-trae-cta-gradient-end text-white px-32 py-3 rounded font-semibold hover:opacity-90 transition-opacity font-manrope text-body">
+            <button className="bg-gradient-to-r from-theme-primary via-trae-cta-gradient-mid to-trae-cta-gradient-end text-white px-32 py-3 rounded font-semibold hover:opacity-90 transition-opacity font-manrope text-body">
               Publish to My Shopify
             </button>
-            <button className="border-2 border-theme-secondary text-theme-secondary px-32 py-3 rounded font-semibold hover:bg-theme-secondary hover:text-white transition-colors font-manrope text-body">
+            <button className="border-2 border-theme-primary text-theme-primary px-32 py-3 rounded font-semibold hover:bg-theme-primary hover:text-white transition-colors font-manrope text-body">
               Request Tweaks
             </button>
           </div>
@@ -324,7 +324,7 @@ function App() {
             </div>
             
             <div className="text-center mt-32">
-              <button className="bg-trae-neutral-button-bg text-theme-primary px-32 py-3 rounded font-semibold hover:bg-gray-100 transition-colors font-manrope text-body border border-theme-primary">
+              <button className="bg-theme-primary text-white px-32 py-3 rounded font-semibold hover:bg-theme-primary-hover transition-colors font-manrope text-body">
                 Yes, I'm In
               </button>
             </div>
@@ -333,7 +333,7 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-theme-bg text-theme-text py-32 border-t border-theme-border border-opacity-20">
+      <footer className="bg-theme-bg text-theme-text py-32">
         <div className="max-w-7xl mx-auto px-16">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-16 md:mb-0">
