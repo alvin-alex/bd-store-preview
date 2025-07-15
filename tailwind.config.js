@@ -5,15 +5,15 @@ export default {
     extend: {
       colors: {
         // Core Palette
-        'primary-blue': '#0B70B8',
-        'primary-blue-light': '#4392D1',
-        'primary-blue-dark': '#085A94',
-        'secondary-orange': '#EE4D23',
-        'secondary-orange-light': '#F37B5E',
-        'secondary-orange-dark': '#BE3E1B',
+        'primary-blue': '#2C4C9C',
+        'primary-blue-light': '#5F82C2',
+        'primary-blue-dark': '#1F356B',
+        'secondary-orange': '#EE6C4D',
+        'secondary-orange-light': '#F4917A',
+        'secondary-orange-dark': '#C75A3F',
         
         // Accent Palette
-        'accent-yellow': '#FFD30A',
+        'accent-yellow': '#F1C40F',
         'accent-teal': '#00BFA5',
         'accent-red': '#E63946',
         
@@ -26,9 +26,9 @@ export default {
         
         // Semantic Palette
         'success-teal': '#00BFA5',
-        'warning-yellow': '#FFD30A',
+        'warning-yellow': '#F1C40F',
         'error-red': '#E63946',
-        'info-blue': '#4392D1',
+        'info-blue': '#5F82C2',
       },
       fontFamily: {
         'cabinet': ['Cabinet Grotesk', 'sans-serif'],
