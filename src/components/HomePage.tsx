@@ -24,7 +24,7 @@ export const HomePage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-16">
           <div className="text-center mb-32">
             <h1 className="text-h1 font-bold text-theme-primary mb-16 font-cabinet">
-              You're store, BeautifullyDone.
+              Your store, BeautifullyDone.
             </h1>
             <p className="text-body text-theme-text-secondary max-w-2xl mx-auto font-manrope">
               We've scraped, redesigned, and packaged your site into a live Shopify demo. Take a look.
