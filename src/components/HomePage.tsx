@@ -91,20 +91,20 @@ export const HomePage: React.FC = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-16">
             {[
-              { title: 'Product Page', desc: 'Detailed product views' },
-              { title: 'Shopping Cart', desc: 'Streamlined checkout' },
-              { title: 'About Page', desc: 'Your brand story' },
-              { title: 'Contact', desc: 'Customer support' }
+              { title: 'Product Page', desc: 'Detailed product views', image: 'https://i.imgur.com/sWAOtVN.png' },
+              { title: 'Shopping Cart', desc: 'Streamlined checkout', image: 'https://i.imgur.com/w1gfRhe.png' },
+              { title: 'About Page', desc: 'Your brand story', image: 'https://i.imgur.com/pccqXu5.png' },
+              { title: 'Contact', desc: 'Customer support', image: 'https://i.imgur.com/PNApLed.png' }
             ].map((page, i) => (
-              <div key={i} className="bg-theme-surface rounded p-16 aspect-square flex flex-col justify-between shadow-card dark:shadow-card-dark border border-theme-border border-opacity-20">
-                <div 
-                  className="flex-1 flex items-center justify-center"
-                  role="img"
-                  aria-label={`${page.title} preview`}
-                >
-                  <div className="w-16 h-16 bg-theme-border rounded"></div>
+              <div key={i} className="bg-theme-surface rounded overflow-hidden shadow-card dark:shadow-card-dark border border-theme-border border-opacity-20">
+                <div className="aspect-square relative overflow-hidden">
+                  <img
+                    src={page.image}
+                    alt={`${page.title} preview`}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <div className="text-center">
+                <div className="p-16 text-center">
                   <h4 className="font-semibold text-theme-text mb-1 font-manrope text-body">{page.title}</h4>
                   <p className="text-small text-theme-text-secondary font-manrope">{page.desc}</p>
                 </div>
