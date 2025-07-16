@@ -97,7 +97,6 @@ export const HomePage: React.FC = () => {
               { title: 'Contact', desc: 'Customer support', image: 'https://i.imgur.com/PNApLed.png', link: 'https://merch.topg.com/refund-policy/' }
             ].map((page, i) => (
               <div key={i} className="bg-theme-surface rounded overflow-hidden shadow-card dark:shadow-card-dark border border-theme-border border-opacity-20">
-                <div className="aspect-video relative overflow-hidden group cursor-pointer">
                 <div className="aspect-[2/1] relative overflow-hidden group cursor-pointer">
                   <a
                     href={page.link}
@@ -132,9 +131,8 @@ export const HomePage: React.FC = () => {
           </div>
             ))}
         </div>
-      </section>
     </>
   );
 };
-  )
-}
+  );
+};
