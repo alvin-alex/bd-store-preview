@@ -89,7 +89,7 @@ export const HomePage: React.FC = () => {
             <p className="text-body text-theme-text-secondary font-manrope max-w-prose mx-auto">Your complete store includes all essential pages</p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-16">
+          <div className="grid md:grid-cols-2 gap-16">
             {[
               { title: 'Product Page', desc: 'Detailed product views', image: 'https://i.imgur.com/sWAOtVN.png', link: 'https://merch.topg.com/product-category/all-items/' },
               { title: 'Shopping Cart', desc: 'Streamlined checkout', image: 'https://i.imgur.com/w1gfRhe.png', link: 'https://merch.topg.com/checkout/' },
@@ -97,7 +97,7 @@ export const HomePage: React.FC = () => {
               { title: 'Contact', desc: 'Customer support', image: 'https://i.imgur.com/PNApLed.png', link: 'https://merch.topg.com/refund-policy/' }
             ].map((page, i) => (
               <div key={i} className="bg-theme-surface rounded overflow-hidden shadow-card dark:shadow-card-dark border border-theme-border border-opacity-20">
-                <div className="aspect-[4/3] relative overflow-hidden group cursor-pointer">
+                <div className="aspect-video relative overflow-hidden group cursor-pointer">
                   <a
                     href={page.link}
                     target="_blank"
