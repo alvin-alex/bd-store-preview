@@ -50,7 +50,7 @@ export const HomePage: React.FC = () => {
                   />
                   
                   {/* Overlay with hover effect */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-black/20 via-purple-900/20 to-black/20 group-hover:from-black/30 group-hover:via-purple-900/30 group-hover:to-black/30 transition-all duration-300 flex items-center justify-center shadow-inner shadow-purple-500/20">
+                  <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
                     <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white bg-opacity-90 backdrop-blur-sm rounded-lg px-6 py-3 transform translate-y-4 group-hover:translate-y-0">
                       <div className="flex items-center space-x-2 text-gray-800">
                         <ExternalLink className="h-5 w-5" />
