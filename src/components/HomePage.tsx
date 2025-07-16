@@ -44,13 +44,13 @@ export const HomePage: React.FC = () => {
                   aria-label="Visit TopG Merchandise Store - Opens in new tab"
                 >
                   <img
-                    src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&h=800&fit=crop&crop=entropy&auto=format&q=80"
+                    src="https://i.imgur.com/OUp92sg.png"
                     alt="TopG Merchandise Store - Live e-commerce website preview"
                     className="w-full h-[600px] object-cover transition-transform duration-300 group-hover:scale-[1.02]"
                   />
                   
                   {/* Overlay with hover effect */}
-                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-black bg-opacity-10 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
                     <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white bg-opacity-90 backdrop-blur-sm rounded-lg px-6 py-3 transform translate-y-4 group-hover:translate-y-0">
                       <div className="flex items-center space-x-2 text-gray-800">
                         <ExternalLink className="h-5 w-5" />
