@@ -97,12 +97,21 @@ export const HomePage: React.FC = () => {
               { title: 'Contact', desc: 'Customer support', image: 'https://i.imgur.com/PNApLed.png' }
             ].map((page, i) => (
               <div key={i} className="bg-theme-surface rounded overflow-hidden shadow-card dark:shadow-card-dark border border-theme-border border-opacity-20">
-                <div className="aspect-square relative overflow-hidden">
+                <div className="aspect-square relative overflow-hidden group cursor-pointer">
                   <img
                     src={page.image}
                     alt={`${page.title} preview`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
                   />
+                  
+                  {/* Overlay with hover effect */}
+                  <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+                    <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white bg-opacity-90 backdrop-blur-sm rounded-lg px-4 py-2 transform translate-y-4 group-hover:translate-y-0">
+                      <div className="flex items-center space-x-2 text-gray-800">
+                        <span className="font-semibold font-manrope text-sm">Preview</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div className="p-16 text-center">
                   <h4 className="font-semibold text-theme-text mb-1 font-manrope text-body">{page.title}</h4>
