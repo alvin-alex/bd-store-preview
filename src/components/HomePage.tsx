@@ -122,10 +122,6 @@ export const HomePage: React.FC = () => {
                     </div>
                   </a>
                 </div>
-                <div className="p-16 text-center">
-                  <h4 className="font-semibold text-theme-text mb-1 font-manrope text-body">{page.title}</h4>
-                  <p className="text-small text-theme-text-secondary font-manrope">{page.desc}</p>
-                </div>
               </div>
             ))}
           </div>
