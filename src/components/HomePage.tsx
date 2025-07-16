@@ -129,3 +129,5 @@ export const HomePage: React.FC = () => {
               </div>
             ))}
           </div>
+  )
+}
