@@ -33,7 +33,7 @@ export const HomePage: React.FC = () => {
 
           {/* Browser Mockup */}
           <div className="max-w-5xl mx-auto mb-32">
-            <div className="bg-theme-surface rounded overflow-hidden border border-theme-border shadow-card dark:shadow-card-dark">
+            <div className="bg-theme-surface rounded overflow-hidden border border-theme-border shadow-lg dark:shadow-2xl">
               {/* Store Preview with 32px padding */}
               <div className="relative group cursor-pointer">
                 <a
