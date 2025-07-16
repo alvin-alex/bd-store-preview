@@ -91,27 +91,36 @@ export const HomePage: React.FC = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-16">
             {[
-              { title: 'Product Page', desc: 'Detailed product views', image: 'https://i.imgur.com/sWAOtVN.png' },
-              { title: 'Shopping Cart', desc: 'Streamlined checkout', image: 'https://i.imgur.com/w1gfRhe.png' },
-              { title: 'About Page', desc: 'Your brand story', image: 'https://i.imgur.com/pccqXu5.png' },
-              { title: 'Contact', desc: 'Customer support', image: 'https://i.imgur.com/PNApLed.png' }
+              { title: 'Product Page', desc: 'Detailed product views', image: 'https://i.imgur.com/sWAOtVN.png', link: 'https://merch.topg.com/product-category/all-items/' },
+              { title: 'Shopping Cart', desc: 'Streamlined checkout', image: 'https://i.imgur.com/w1gfRhe.png', link: 'https://merch.topg.com/checkout/' },
+              { title: 'About Page', desc: 'Your brand story', image: 'https://i.imgur.com/pccqXu5.png', link: 'https://merch.topg.com/terms-and-conditions/' },
+              { title: 'Contact', desc: 'Customer support', image: 'https://i.imgur.com/PNApLed.png', link: 'https://merch.topg.com/refund-policy/' }
             ].map((page, i) => (
               <div key={i} className="bg-theme-surface rounded overflow-hidden shadow-card dark:shadow-card-dark border border-theme-border border-opacity-20">
                 <div className="aspect-square relative overflow-hidden group cursor-pointer">
-                  <img
-                    src={page.image}
-                    alt={`${page.title} preview`}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
-                  />
-                  
-                  {/* Overlay with hover effect */}
-                  <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
-                    <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white bg-opacity-90 backdrop-blur-sm rounded-lg px-4 py-2 transform translate-y-4 group-hover:translate-y-0">
-                      <div className="flex items-center space-x-2 text-gray-800">
-                        <span className="font-semibold font-manrope text-sm">Preview</span>
+                  <a
+                    href={page.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-surface"
+                    aria-label={`Visit ${page.title} - Opens in new tab`}
+                  >
+                    <img
+                      src={page.image}
+                      alt={`${page.title} preview`}
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                    />
+                    
+                    {/* Overlay with hover effect */}
+                    <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+                      <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white bg-opacity-90 backdrop-blur-sm rounded-lg px-4 py-2 transform translate-y-4 group-hover:translate-y-0">
+                        <div className="flex items-center space-x-2 text-gray-800">
+                          <ExternalLink className="h-4 w-4" />
+                          <span className="font-semibold font-manrope text-sm">Visit Page</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div className="p-16 text-center">
                   <h4 className="font-semibold text-theme-text mb-1 font-manrope text-body">{page.title}</h4>
