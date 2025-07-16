@@ -56,48 +56,30 @@ export const HomePage: React.FC = () => {
               </div>
               
               {/* Store Preview with 32px padding */}
-              <div className="p-32 bg-theme-bg">
-                <div className="space-y-32">
-                  {/* Store Header */}
-                  <div className="flex justify-between items-center pb-16 border-b border-theme-border">
-                    <div className="text-h3 font-bold text-theme-text font-cabinet">Your Store</div>
-                    <div className="flex space-x-16">
-                      <span className="text-small text-theme-text-secondary font-manrope">Cart (0)</span>
-                      <span className="text-small text-theme-text-secondary font-manrope">Account</span>
-                    </div>
-                  </div>
+              <div className="relative group cursor-pointer">
+                <a
+                  href="https://merch.topg.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-surface"
+                  aria-label="Visit TopG Merchandise Store - Opens in new tab"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&h=800&fit=crop&crop=entropy&auto=format&q=80"
+                    alt="TopG Merchandise Store - Live e-commerce website preview"
+                    className="w-full h-[600px] object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                  />
                   
-                  {/* Hero Product */}
-                  <div className="grid md:grid-cols-2 gap-32">
-                    <div className="bg-theme-surface aspect-square rounded flex items-center justify-center">
-                      <div className="text-theme-text-secondary text-center">
-                        <div className="w-16 h-16 bg-theme-border rounded mx-auto mb-16"></div>
-                        <p className="font-manrope text-small">Product Image</p>
+                  {/* Overlay with hover effect */}
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center">
+                    <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white bg-opacity-90 backdrop-blur-sm rounded-lg px-6 py-3 transform translate-y-4 group-hover:translate-y-0">
+                      <div className="flex items-center space-x-2 text-gray-800">
+                        <ExternalLink className="h-5 w-5" />
+                        <span className="font-semibold font-manrope">Visit Live Store</span>
                       </div>
                     </div>
-                    <div className="space-y-16">
-                      <h2 className="text-h3 font-bold text-theme-text font-cabinet">Featured Product</h2>
-                      <p className="text-theme-text-secondary font-manrope text-body max-w-prose">Beautiful product description that converts visitors into customers.</p>
-                      <div className="text-h2 font-bold text-theme-text font-cabinet">$99.99</div>
-                      <button className="bg-theme-primary text-white px-32 py-3 rounded font-semibold hover:bg-theme-primary-hover transition-colors font-manrope text-body">
-                        Add to Cart
-                      </button>
-                    </div>
                   </div>
-                  
-                  {/* Product Grid */}
-                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-16">
-                    {[1, 2, 3, 4].map((i) => (
-                      <div key={i} className="space-y-8">
-                        <div className="bg-theme-surface aspect-square rounded flex items-center justify-center">
-                          <div className="w-8 h-8 bg-theme-border rounded"></div>
-                        </div>
-                        <div className="text-small font-semibold text-theme-text font-manrope">Product {i}</div>
-                        <div className="text-small text-theme-primary font-bold font-manrope">$49.99</div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
