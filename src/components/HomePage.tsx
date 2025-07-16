@@ -33,7 +33,7 @@ export const HomePage: React.FC = () => {
 
           {/* Browser Mockup */}
           <div className="max-w-5xl mx-auto mb-32">
-            <div className="bg-theme-surface rounded shadow-card dark:shadow-card-dark overflow-hidden border border-theme-border">
+            <div className="bg-theme-surface rounded overflow-hidden border border-theme-border shadow-card dark:shadow-card-dark">
               {/* Store Preview with 32px padding */}
               <div className="relative group cursor-pointer">
                 <a
@@ -96,7 +96,7 @@ export const HomePage: React.FC = () => {
               { title: 'About Page', desc: 'Your brand story' },
               { title: 'Contact', desc: 'Customer support' }
             ].map((page, i) => (
-              <div key={i} className="bg-theme-surface rounded p-16 aspect-square flex flex-col justify-between shadow-subtle dark:shadow-subtle-dark border border-theme-border border-opacity-20">
+              <div key={i} className="bg-theme-surface rounded p-16 aspect-square flex flex-col justify-between shadow-card dark:shadow-card-dark border border-theme-border border-opacity-20">
                 <div 
                   className="flex-1 flex items-center justify-center"
                   role="img"
