@@ -34,27 +34,6 @@ export const HomePage: React.FC = () => {
           {/* Browser Mockup */}
           <div className="max-w-5xl mx-auto mb-32">
             <div className="bg-theme-surface rounded shadow-card dark:shadow-card-dark overflow-hidden border border-theme-border">
-              {/* Browser Header */}
-              <div className="bg-theme-surface p-16 flex items-center space-x-8 border-b border-theme-border">
-                <div className="flex space-x-8">
-                  <div className="w-3 h-3 bg-accent-red rounded-full"></div>
-                  <div className="w-3 h-3 bg-accent-yellow rounded-full"></div>
-                  <div className="w-3 h-3 bg-accent-teal rounded-full"></div>
-                </div>
-                <div className="flex-1 mx-16">
-                  <a
-                    href="https://demo-store.myshopify.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-theme-bg rounded px-16 py-1 text-small text-theme-text-secondary font-manrope hover:text-theme-primary hover:bg-theme-surface transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-theme-primary focus:ring-offset-2 focus:ring-offset-theme-surface inline-flex items-center gap-2 w-full justify-center group"
-                    aria-label="Visit demo store in new tab"
-                  >
-                    <span>yourstore.myshopify.com</span>
-                    <ExternalLink className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
-                  </a>
-                </div>
-              </div>
-              
               {/* Store Preview with 32px padding */}
               <div className="relative group cursor-pointer">
                 <a
